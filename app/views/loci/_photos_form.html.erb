@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col">
+    <h1>Photos</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col photo-container">
+    <% @locus['photos']&.each_with_index do |photo, index| %>
+      <%= render 'photo_form_row', photo: photo, index: index  %>
+    <% end %>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col">
+    <input type="button" id="add-photo-row" name="add-photo-row" value="Add Photo" />
+  </div>
+</div>
+
+<script>
+  function removeThisPhoto(_this){
+    $(_this).parents('.photo-row').remove();
+  };
+
+  $(function($) {
+    var nextIndex = $('.photo-row').last().data('photo-index') + 1
+    var html = "<%= j render 'photo_form_row', photo: {}, index: 'TEMPPHOTOROW' %>".replace('TEMPPHOTOROW', nextIndex)
+    var $button = $('#add-photo-row')
+
+    $button.click(function() {
+      $('.photo-container').append(html);
+    });
+  })
+</script>

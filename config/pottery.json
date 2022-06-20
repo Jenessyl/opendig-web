@@ -1,0 +1,42 @@
+{
+  "PotteryReading": [{
+    "values": ["Amphoriskos", "Attic", "Baasi", "Baking Tray", "Base", "Basin", "Body", "Bottle", "Bowl", "Bowl, Carinated", "Bowl, Miniature", "Chalice", "Cooking Bowl", "Cooking Jug", "Cooking Pot", "Cup", "Decanter", "Flask", "Goblet", "Ibreek", "Jar", "Jar, Holemouth", "Jar, Necked", "Jar\/Jug", "Jug", "Jug\/Juglet", "Juglet", "Kernos", "Krater", "Lamp", "Lid", "Model Shrine", "Moratarium", "Mortar", "Mortarium", "Mug", "Other", "Painted Body", "Pipe", "Pithos", "Pithos Handle", "Plate", "Platter", "Pot", "Pyxis", "Rhyton", "Roof Tile", "Scoop", "Stand", "Strainer", "Tripod", "Tripod Cup", "Unguentarium", "Vat", "Zir"],
+    "value_type": "string",
+    "label": "Form",
+    "type": "picker",
+    "key": "pot_form"
+  }, {
+    "values": ["Neolithic", "Chalcolithic", "Bronze Age", "Early Bronze", "Early Bronze 1", "Early Bronze 2", "Early Bronze 3", "Early Bronze 4", "Middle Bronze", "Middle Bronze 2", "MB2 through LB", "MB2\/LB", "Late Bronze", "Late Bronze 1", "Late Bronze 2", "LB to Iron 1", "LB-Iron 1 Trans", "Iron", "Early Iron 1", "Iron 1", "Late Iron 1", "Late Iron 1Trans", "Early Iron 2", "Iron 2", "Late Iron 2", "Late Iron 2\/Persian", "Persian", "Pre-Classical", "Persian to Hellenistic", "Classical", "Hellenistic", "Early Hellenistic", "Late Hellenistic", "Hel\/Rom", "Roman", "Early Roman", "Late Roman", "Roman through Byzantine", "Roman\/Byzantine", "Byzantine", "Early Byzantine", "Late Byzantine", "Byz\/Early Islamic", "Islamic", "Early Islamic", "Umayyad", "Abbasid", "Fatimid", "Crusader", "Middle Islamic", "Ayyubid\/Mamluk", "Mamluk", "Late Islamic", "Turkish", "Modern", "Undetermined"],
+    "value_type": "string",
+    "label": "Age",
+    "type": "picker",
+    "key": "age"
+  }, {
+    "value_type": "integer",
+    "label": "Count",
+    "type": "text_field",
+    "key": "count"
+  }, {
+    "value_type": "string",
+    "label": "Location",
+    "type": "text_field",
+    "key": "location"
+  }, {
+    "values": ["", "Early", "Mid", "Late", "Possible", "Pre", "Post", "Transitional"],
+    "value_type": "string",
+    "label": "Time Modifier",
+    "type": "picker",
+    "key": "time_level"
+  }, {
+    "values": ["", "1 bod", "1 bod?", "1 poss", "1 prob", "1bo", "1bod", "2 bods", "2 poss", "2 prob", "3", "3 poss", "5", "?", "All bods", "Bod", "Bods", "Bods?", "Eisl", "MB", "Multiple", "Poss", "Poss Bods", "Possible", "Prob", "Probable", "all bods", "bod", "bods", "eb", "eir2", "ir1", "kr", "lir2", "one bod", "poss", "prob", "prob bods"],
+    "value_type": "string",
+    "label": "Question",
+    "type": "picker",
+    "key": "question"
+  }, {
+    "value_type": "string",
+    "label": "Quantity Modifier",
+    "type": "text_field",
+    "key": "quantity_modifier"
+  }]
+}

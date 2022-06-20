@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col">
+    <h1>Levels</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Location</th>
+          <th>Top Level</th>
+          <th>Bottom Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @locus.dig('levels').each do |level| %>
+          <tr>
+            <td><%= level["location"] %></td>
+            <td><%= level_or_nil level["top_level"] %></td>
+            <td><%= level_or_nil level["bottom_level"] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

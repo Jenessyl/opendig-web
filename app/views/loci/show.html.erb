@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-10 align-bottom">
+      <h1>Locus <%= @field %>.<%= @square %>.<%= @locus_code %></h1>
+    </div>
+    <div class="col-2 align-bottom">
+      <%#= link_to "Edit", edit_field_square_locus_path(@field, @square, @locus_code), class: "btn btn-primary float-right" %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+          <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
+          <li class="breadcrumb-item"><%= link_to "Square #{@square}", field_square_loci_path(@field, @square) %></li>
+          <li class="breadcrumb-item active" aria-current="page">Locus <%= @field %>.<%= @square %>.<%= @locus_code %></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <%= render 'general' %>
+  <%= render 'interpretation' %>
+  <%= render 'description' %>
+  <%= render 'supplements' if @locus["supplements"] %>
+  <%= render 'levels' if @locus["levels"] %>
+  <%= render 'stratigraphy' if @locus["stratigraphies"] %>
+  <%= render 'photos' if @locus["photos"] %>
+  <%= render 'pottery' if @locus["pottery"] %>
+  <%= render 'pails' if @locus["pails"] %>
+  <%#= render 'objects' %>
+</div>

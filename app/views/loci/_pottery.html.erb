@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col">
+    <h1>Pails and Pottery</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Pail</th>
+          <th>Baskets</th>
+          <th>Publish</th>
+          <th>Diagnostics</th>
+          <th>Total Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @locus.dig('pails').each do |pail| %>
+          <tr>
+            <td><%= l read_date pail["pail_date"] %></td>
+            <td><%= pail["pail_number"] %></td>
+            <td><%= pail["baskets"] %></td>
+            <td><%= pail["publish"] %></td>
+            <td><%= pail["diagnostic_count"] %></td>
+            <td><%= pail["total_count"] %></td>
+          </tr>
+          <% if pail["comments"] %>
+            <tr>
+              <td colspan="6">
+                <i>Comments:</i> <%= pail["comments"] %>
+              </td>
+            </tr>
+          <% end %>
+          <% if pail["readings"] %>
+            <% pail["readings"].group_by{|reading| reading["age"]}.each do |age, reading| %>
+              <tr>
+
+              </tr>
+            <% end %>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

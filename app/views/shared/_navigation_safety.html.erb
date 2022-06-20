@@ -1,0 +1,11 @@
+<script>
+var dispatchUnloadEvent = function() {
+  var event = document.createEvent("Events")
+  event.initEvent("turbolinks:unload", true, false)
+  document.dispatchEvent(event)
+}
+
+addEventListener("beforeunload", dispatchUnloadEvent)
+addEventListener("turbolinks:before-render", dispatchUnloadEvent)
+
+</script>

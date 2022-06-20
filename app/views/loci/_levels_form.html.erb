@@ -1,0 +1,54 @@
+<div class="row">
+  <div class="col">
+    <h1>Levels</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col level-container">
+    <% @locus['levels']&.each do |level| %>
+      <%= render 'level_form_row', level: level %>
+    <% end %>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col">
+    <input type="button" id="add-level-row" name="add-level-row" value="Add Level" />
+  </div>
+</div>
+
+<script>
+  function removeThisLevel(_this){
+    $(_this).parents('.level-row').remove();
+  };
+
+  $(function($) {
+    var html = `
+      <div class="form-row level-row">
+        <div class="form-group col-md-2">
+          <%= label_tag "locus[levels[][top_level]]", "Top Level" %>
+          <%= text_field_tag "locus[levels[][top_level]]", '', class: 'form-control' %>
+        </div>
+        <div class="form-group col-md-3">
+          <%= label_tag "locus[levels[][method_top]]", "Recorded with" %>
+          <%= select_tag "locus[levels[][method_top]]", options_for_select(survey_instruments), include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group col-md-2">
+          <%= label_tag "locus[levels[][bottom_level]]", "Bottom Level" %>
+          <%= text_field_tag "locus[levels[][bottom_level]]", '', class: 'form-control' %>
+        </div>
+          <div class="form-group col-md-3">
+          <%= label_tag "locus[levels[][method_bottom]]", "Recorded with" %>
+          <%= select_tag "locus[levels[][method_bottom]]", options_for_select(survey_instruments), include_blank: true, class: 'form-control' %>
+        </div>
+        <div class="form-group col-md-2 text-bottom d-flex flex-column">
+          <button name="button" onclick="removeThisLevel(this);" type="button" class="mt-auto btn btn-danger btn-sm">Delete</button>
+        </div>
+      </div>
+    `
+    var $button = $('#add-level-row')
+
+    $button.click(function() {
+      $('.level-container').append(html);
+    });
+  })
+</script>

@@ -1,0 +1,41 @@
+<script>
+  var potFormValues = <%= raw pot_form.drop(1).to_json %>
+  var ageValues = <%= raw age.drop(1).to_json %>
+  var timeLevelValues = <%= raw time_level.drop(1).to_json %>
+  var questionValues = <%= raw question.drop(1).to_json %>
+</script>
+<div class="row">
+  <div class="col">
+    <h1>Pails</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col pail-container">
+    <% @locus['pails']&.each_with_index do |pail, index| %>
+      <%= render 'pail_form_row', pail: pail, index: index  %>
+    <% end %>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col">
+    <input type="button" id="add-pail-row" name="add-pail-row" value="Add Pail" />
+  </div>
+</div>
+
+<script>
+  function removeThisPail(_this){
+    $(_this).parents('.pail-row').remove();
+  };
+
+  $(function($) {
+    var nextPailIndex = $('.pail-row').last().data('pail-index') + 1
+
+    var html = "<%= j render 'pail_form_row', pail: {}, index: 'TEMPPAILROW' %>".replace('TEMPPAILROW', nextPailIndex)
+
+    var $button = $('#add-pail-row')
+
+    $button.click(function() {
+      $('.pail-container').append(html);
+    });
+  })
+</script>

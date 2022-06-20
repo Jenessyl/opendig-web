@@ -1,0 +1,23 @@
+<div class="row mb-3">
+  <div class="col">
+    <h1><%= "#{@locus['locus_type']} Description" %></h1>
+  </div>
+</div>
+<% description_type = @descriptions['description_types'][@locus['locus_type']] %>
+<% @descriptions[description_type].each do |description_section| %>
+  <div class="row">
+    <div class="col">
+      <h2><%= description_section[0] %></h2>
+    </div>
+  </div>
+
+  <% description_section[1].each do |descrtipion_section_entry| %>
+    <div class="form-group row">
+      <label for="field" class="col-sm-12 col-form-label"><%= descrtipion_section_entry['label'] %></label>
+      <div class="col-sm-12">
+        <%= input_for(descrtipion_section_entry, @locus&.dig(description_type)&.dig(descrtipion_section_entry['key']),description_type) %>
+      </div>
+    </div>
+
+  <% end %>
+<% end %>

@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col">
+  <h2>General Information</h2>
+  <% @descriptions['general_information'].each do |general_entry| %>
+    <p><%= general_entry["label"] %>: <%= output(@locus.dig(general_entry["key"]), general_entry["type"]) %></p>
+  <% end %>
+  </div>
+</div>

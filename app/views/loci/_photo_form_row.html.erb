@@ -1,0 +1,23 @@
+<div class="form-row photo-row" data-photo-index=<%= index %>>
+  <div class="form-group col-md-3">
+    <%= label_tag "locus[photos[#{index}][date]]", "Date" %>
+    <%= text_field_tag "locus[photos[#{index}][date]]", read_date(photo['date']), class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-3">
+    <%= label_tag "locus[photos[#{index}][number]]", "Number" %>
+    <%= text_field_tag "locus[photos[#{index}][number]]", photo['number'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-3">
+    <%= label_tag "locus[photos[#{index}][subject]]", "Subject" %>
+    <%= text_field_tag "locus[photos[#{index}][subject]]", photo['subject'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-2 text-bottom d-flex flex-column">
+    <button name="button" onclick="removeThisPhoto(this);" type="button" class="mt-auto btn btn-danger btn-sm">Delete</button>
+  </div>
+</div>
+
+<script>
+  $( "#locus_photos_<%= index %>_date" ).datepicker({
+    dateFormat: "dd M, yy"
+  });
+</script>

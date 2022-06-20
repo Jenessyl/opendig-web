@@ -1,0 +1,8 @@
+<div class="row">
+  <div class="col">
+  <h2>Interpretation</h2>
+  <% @descriptions['interpretation'].each do |interpretation| %>
+    <p><%= interpretation["label"] %>: <%= output(@locus.dig(interpretation["key"]), interpretation["type"]) %></p>
+  <% end %>
+  </div>
+</div>

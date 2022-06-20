@@ -1,0 +1,22 @@
+volumes:
+  couchdb-data: {}
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    links:
+      - db
+
+  db:
+    image: couchdb:latest
+    environment:
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: password
+    ports:
+      - 6984:5984
+    volumes:
+      - couchdb-data:/usr/local/var/lib/couchdb

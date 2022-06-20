@@ -1,0 +1,68 @@
+<div class="form-row pail-row" data-pail-index=<%= index %>>
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][pail_number]]", "Number" %>
+    <%= text_field_tag "locus[pails[#{index}][pail_number]]", pail['pail_number'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][pail_date]]", "Date" %>
+    <%= text_field_tag "locus[pails[#{index}][pail_date]]", pail['pail_date'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][baskets]]", "Baskets" %>
+    <%= text_field_tag "locus[pails[#{index}][baskets]]", pail['baskets'], class: 'form-control' %>
+  </div>
+
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][total_count]]", "Total Sherd Count" %>
+    <%= text_field_tag "locus[pails[#{index}][total_count]]", pail['total_count'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][diagnostic_count]]", "Diagnostic Count" %>
+    <%= text_field_tag "locus[pails[#{index}][diagnostic_count]]", pail['diagnostic_count'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-2">
+    <%= label_tag "locus[pails[#{index}][publish]]", "Publish Count" %>
+    <%= text_field_tag "locus[pails[#{index}][publish]]", pail['publish'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-10">
+    <%= label_tag "locus[pails[#{index}][pottery_comments]]", "Comments" %>
+    <%= text_area_tag "locus[pails[#{index}][pottery_comments]]", pail['pottery_comments'], class: 'form-control' %>
+  </div>
+  <div class="form-group col-md-1"></div>
+  <div class="form-group col-md-1 text-bottom d-flex flex-column">
+    <button name="button" onclick="removeThisPail(this);" type="button" class="mt-auto btn btn-danger btn-sm">Delete</button>
+  </div>
+  <div class="col">
+    <div class="row">
+      <div class="form-group col-md-1">
+      </div>
+      <div class="form-group col-md-11 pail-<%= index %>-reading-container">
+        <h3>Pail <%= pail['pail_number'] %> Readings</h3>
+        <% pail['readings']&.each_with_index do |reading, reading_index| %>
+          <%= render 'pail_reading_form_row', pail: pail, reading: reading, pail_index: index, reading_index: reading_index  %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="row mb-3">
+    <div class="col-md-1"></div>
+    <div class="col-md-11">
+      <input type="button" id="add-pail-<%= index %>-reading-row" name="add-pail-<%= index %>-reading-row" value="Add Reading" />
+    </div>
+  </div>
+
+<script>
+
+  $(function($) {
+    var nextPailReadingIndex = $('.pail-<%= index %>-reading-row').last().data('pail-<% index %>-reading-index') + 1
+
+    var html = "<%= j render 'pail_reading_form_row', pail: pail, reading: {}, pail_index: index, reading_index: 'TEMPREADINGROW' %>".replace('TEMPREADINGROW', nextPailReadingIndex)
+
+    var $button = $('#add-pail-<%= index %>-reading-row')
+
+    $button.click(function() {
+      $('.pail-<%= index %>-reading-container').append(html);
+    });
+  })
+</script>

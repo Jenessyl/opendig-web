@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col">
+    <h1>Stratigraphy</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col stratigraphy-container">
+    <% @locus['stratigraphies']&.each do |stratigraphy| %>
+      <%= render 'stratigraphy_form_row', stratigraphy: stratigraphy %>
+    <% end %>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col">
+    <input type="button" id="add-row" name="add-row" value="Add row" />
+  </div>
+</div>
+
+    <div class="form-group row">
+      <label for="designation" class="col-sm-12 col-form-label">Stratigraphy Remarks</label>
+      <div class="col-sm-12">
+        <textarea class="form-control" id="locus[stratigraphy_remarks]" name="locus[stratigraphy_remarks]" rows="5"><%= @locus['stratigraphy_remarks'] %></textarea>
+      </div>
+    </div>
+
+<script>
+  function removeThis(_this){
+    $(_this).parents('.stratigraphy-row').remove();
+  };
+
+  $(function($) {
+    var html = `
+    <div class="form-row stratigraphy-row">
+      <div class="form-group col-md-3">
+        <%= label_tag "locus[stratigraphies[][is_related]]", "How is it related?" %>
+        <%= select_tag "locus[stratigraphies[][is_related]]", options_for_select(stratigraphic_relationships), include_blank: true, class: 'form-control' %>
+      </div>
+      <div class="form-group col-md-3">
+        <%= label_tag "locus[stratigraphies[][related]]", "What is it related to?" %>
+        <%= select_tag "locus[stratigraphies[][related]]", options_for_select(stratigraphy_relatation_types), include_blank: true, class: 'form-control' %>
+      </div>
+      <div class="form-group col-md-3">
+        <%= label_tag "locus[stratigraphies[][related_locus]]", "Related Locus" %>
+        <%= select_tag "locus[stratigraphies[][related_locus]]", options_for_select(all_loci), include_blank: true, class: 'form-control' %>
+      </div>
+      <div class="form-group col-md-3 text-bottom d-flex flex-column">
+        <button name="button" onclick="removeThis(this);" type="button" class="mt-auto btn btn-danger btn-sm">Delete</button>
+      </div>
+    </div>
+    `
+
+   function removeThis(_this){
+        $(_this).parents('.stratigraphy-row').remove();
+    };
+
+    var $button = $('#add-row')
+
+    $button.click(function() {
+      $('.stratigraphy-container').append(html);
+    });
+  })
+</script>

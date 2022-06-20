@@ -1,0 +1,6 @@
+<h1>New Square in Field <%= @field %></h1>
+<%= form_tag(field_squares_path(@field)) do %>
+  <%= label_tag(:square, "New Square:") %>
+  <%= text_field_tag(:square) %>
+  <%= submit_tag("Create Square") %>
+<% end %>

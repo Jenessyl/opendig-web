@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-10 align-bottom">
+    <h1>Loci for <%= @field %>.<%= @square %></h1>
+  </div>
+  <div class="col-2 align-bottom">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newLocus">
+      New Locus
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="newLocus" tabindex="-1" role="dialog" aria-labelledby="newLocusLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="newLocusLabel">New Locus</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><%= link_to "New Architecture Locus", new_field_square_locus_path(@field, @square, type: 'Architecture') %></p>
+            <p><%= link_to "New Burial Locus", new_field_square_locus_path(@field, @square, type: 'Burial') %></p>
+            <p><%= link_to "New Earth Locus", new_field_square_locus_path(@field, @square, type: 'Earth') %></p>
+            <p><%= link_to "New Installation Locus", new_field_square_locus_path(@field, @square, type: 'Installation') %></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
+        <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= "Square #{@square}" %></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<% @loci.each do |locus| %>
+<div class="row">
+  <div class="col-3">
+    <%= link_to "#{locus.code}", field_square_locus_path(@field, @square, locus.code) %>
+  </div>
+  <div class="col-3">
+    <%= locus.locus_type %>
+  </div>
+  <div class="col-6">
+    <%= locus.designation %>
+  </div>
+</div>
+<% end %>

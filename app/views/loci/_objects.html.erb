@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col">
+    <h1>Objects and Artifacts</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Registration Number</th>
+          <th>Description</th>
+          <th>Quantity</th>
+          <th>Certainty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @locus.dig('artifacts').each do |artifact| %>
+          <tr>
+            <td><%= artifact["registration"] %></td>
+            <td><%= artifact["number"] %></td>
+            <td><%= artifact["count"] %></td>
+            <td><%= artifact["certainty"] %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

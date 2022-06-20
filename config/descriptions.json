@@ -1,0 +1,2520 @@
+{
+    "config": {
+        "development": {
+            "media_server": "http://media.opendig.org"
+        },
+        "umayri": {
+            "media_server": "http://media.opendig.org"
+        },
+        "balua": {
+            "media_server": "http://media.opendig.org"
+        }
+    },
+    "description_types": {
+        "Architecture": "architecture_description",
+        "Burial": "burial_description",
+        "Earth": "earth_description",
+        "Installation": "installation_description"
+    },
+    "supplements": {
+        "architecture_supplement": "architecture_description",
+        "earth_supplement": "earth_description",
+        "installation_supplement": "installation_description"
+    },
+    "general_information": [{
+            "key": "locus_type",
+            "label": "Locus Type"
+        },
+        {
+            "key": "supervisor",
+            "label": "Supervisor"
+        },
+        {
+            "key": "designation",
+            "label": "Designation"
+        },
+        {
+            "key": "reason",
+            "label": "Reason"
+        },
+        {
+            "key": "top_separation",
+            "label": "Top Separation"
+        },
+        {
+            "key": "bottom_separation",
+            "label": "Bottom Separation"
+        },
+        {
+            "key": "start_date",
+            "label": "Start Date",
+            "type": "date"
+        },
+        {
+            "key": "end_date",
+            "label": "End Date",
+            "type": "date"
+        }
+    ],
+    "interpretation": [{
+            "key": "function",
+            "label": "Function"
+        },
+        {
+            "key": "stratigraphy_remarks",
+            "label": "Stratigraphy remarks"
+        },
+        {
+            "key": "balk",
+            "label": "Balk"
+        },
+        {
+            "key": "phase",
+            "label": "Phase"
+        },
+        {
+            "key": "stratum",
+            "label": "Stratum "
+        }
+    ],
+    "data_items": [],
+    "architecture_description": [
+        [
+            "Material",
+            [{
+                    "key": "chert_qualifier_1",
+                    "label": "chert Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "",
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "chert_qualifier_2",
+                    "label": "chert Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "",
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "chert_qualifier_3",
+                    "label": "chert Qualifier 3",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "chert_percent",
+                    "label": "chert Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "limestone_qualifier_1",
+                    "label": "Limestone Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "y",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "limestone_qualifier_2",
+                    "label": "Limestone Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "y",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "limestone_qualifier_3",
+                    "label": "Limesotne Qualifier 3",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "y",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "limestone_percent",
+                    "label": "Limestone Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "basalt_qualifier_1",
+                    "label": "basalt Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "basalt_qualifier_2",
+                    "label": "basalt Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "basalt_qualifier_3",
+                    "label": "basalt Qualifier 3",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "basalt_percent",
+                    "label": "basalt Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "nari_qualifier_1",
+                    "label": "nari Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "nari_qualifier_2",
+                    "label": "nari Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "nari_qualifier_3",
+                    "label": "nari Qualifier 3",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "nari_percent",
+                    "label": "nari Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "mudbrick_qualifier_1",
+                    "label": "mudbrick Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mudbrick_qualifier_2",
+                    "label": "mudbrick Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mudbrick_qualifier_3",
+                    "label": "mudbrick Qualifier 3",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mudbrick_percent",
+                    "label": "mudbrick Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fragment_number",
+                    "label": "Arch Frags",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fragment_type",
+                    "label": "Fragment Type",
+                    "type": "text_field",
+                    "value_type": "string"
+                },
+                {
+                    "key": "quarry",
+                    "label": "Quarry",
+                    "type": "text_field",
+                    "value_type": "string"
+                }
+            ]
+        ],
+        [
+            "Wall Stones",
+            [{
+                    "key": "wall_cobbles",
+                    "label": "Cobble (6-25 cm) %",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "wall_small_boulder",
+                    "label": "Small Boulder (25-50cm) %",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "wall_medium_boulder",
+                    "label": "Medium Boulder (50-75cm) %",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "wall_large_boulder",
+                    "label": "Large Boulder (75-100cm) %",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "wall_very_large_boulder",
+                    "label": "Very Large Boulder (>1 m) %",
+                    "type": "text_field",
+                    "value_type": "float"
+                }
+            ]
+        ],
+        [
+            "Chinkstones",
+            [{
+                    "key": "chink_pebble",
+                    "label": "Pebble (.2-6 cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "chink_cobble",
+                    "label": "Cobble (6-25 cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Fillstones: (in Rubble-filled Construction)",
+            [{
+                    "key": "fill_cobble",
+                    "label": "Cobble (6-25 cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fill_small_boulder",
+                    "label": "Small Boulder (25-50cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fill_medium_boulder",
+                    "label": "Medium Boulder (50-75cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fill_large_boulder",
+                    "label": "Large Boulder (75-100cm) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "fill_very_large_boulder",
+                    "label": "Very Large Boulder (>1 m) %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Brick",
+            [{
+                    "key": "brick_upper_length",
+                    "label": "Length (upper)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_lower_length",
+                    "label": "Length (lower)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_upper_width",
+                    "label": "Width (upper)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_lower_width",
+                    "label": "Width (lower)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_upper_depth",
+                    "label": "Depth (upper)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_lower_depth",
+                    "label": "Depth (lower)",
+                    "type": "text_field",
+                    "value_type": "float"
+                }
+            ]
+        ],
+        [
+            "Dressing: (Stone Only)",
+            [{
+                    "key": "unhewn_percent",
+                    "label": "Unhewn %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "semi-hewn_percent",
+                    "label": "Semi-hewn %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "dressed_percent",
+                    "label": "Dressed %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "ashlar_percent",
+                    "label": "Ashlar %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "bossed_percent",
+                    "label": "Bossed %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Tooling (Stone Only)",
+            [{
+                    "key": "tooling_upper_width",
+                    "label": "Upper Width",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "tooling_lower_width",
+                    "label": "Lower Width",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "tooling_upper_length",
+                    "label": "Upper Length",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "tooling_lower_length",
+                    "label": "Lower Length",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "tooling_sketch",
+                    "label": "Sketch",
+                    "type": "checkbox",
+                    "value_type": "boolean"
+                },
+                {
+                    "key": "tooling_photo",
+                    "label": "Photo",
+                    "type": "checkbox",
+                    "value_type": "boolean"
+                }
+            ]
+        ],
+        [
+            "Mortar",
+            [{
+                    "key": "dry_laid_percent",
+                    "label": "Dry-laid %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "clay_percent",
+                    "label": "Clay %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "mud_percent",
+                    "label": "Mud %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "cement_percent",
+                    "label": "Cement %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "plaster_percent",
+                    "label": "Plaster %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "average_morter_thickness",
+                    "label": "Average Thickness",
+                    "type": "text_field",
+                    "value_type": "float"
+                }
+            ]
+        ],
+        [
+            "Facing",
+            [{
+                    "key": "facing",
+                    "label": "Facing",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Unfaced",
+                        "Plaster",
+                        "Mud",
+                        "Paint"
+                    ]
+                },
+                {
+                    "key": "color",
+                    "label": "Color",
+                    "type": "text_field",
+                    "value_type": "string"
+                }
+            ]
+        ],
+        [
+            "Construction",
+            [{
+                    "key": "construction_style",
+                    "label": "Style",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Boulder & Chink",
+                        "Shlar Fit",
+                        "Hader-stretcher",
+                        "Rubble-filled",
+                        "Rubble",
+                        "Stacked Bricks",
+                        "Tied-in Bricks",
+                        "Quoin & Pier",
+                        "Orthostat"
+                    ]
+                },
+                {
+                    "key": "construction_support",
+                    "label": "Support",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Free-standing",
+                        "Buttressed",
+                        "Battered",
+                        "Foundation"
+                    ]
+                },
+                {
+                    "key": "tendencies",
+                    "label": "Tendencies",
+                    "type": "text_field",
+                    "value_type": "string"
+                }
+            ]
+        ],
+        [
+            "Courses",
+            [{
+                    "key": "upper_course_count",
+                    "label": "Highest Count",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_course_count",
+                    "label": "Lowest Count",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "course_random",
+                    "label": "Random",
+                    "type": "checkbox",
+                    "value_type": "boolean"
+                }
+            ]
+        ],
+        [
+            "Rows",
+            [{
+                    "key": "upper_row_count",
+                    "label": "Highest Count",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_row_count",
+                    "label": "Lowest Count",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "two_rubble",
+                    "label": "Two with Rubble",
+                    "type": "checkbox",
+                    "value_type": "boolean"
+                },
+                {
+                    "key": "row_random",
+                    "label": "Random",
+                    "type": "checkbox",
+                    "value_type": "boolean"
+                }
+            ]
+        ],
+        [
+            "Measurements",
+            [{
+                    "key": "length",
+                    "label": "Greatest Length in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "upper_width",
+                    "label": "Greatest width in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_width",
+                    "label": "Smallest width in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "upper_height",
+                    "label": "Greatest Height in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_height",
+                    "label": "Lowest Height in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "orientation",
+                    "label": "Orientation (degrees)",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "dip",
+                    "label": "Dip (degrees)",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Preservation",
+            [{
+                    "key": "preservation",
+                    "label": "Preservation",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Complete",
+                        "Partial Superstructure: Most",
+                        "Partial Superstructure: Half",
+                        "Partial Superstructure: Little",
+                        "Foundation Only: Complete",
+                        "Foundation Only: Partial",
+                        "Robbed"
+                    ]
+                },
+                {
+                    "key": "lean_direction",
+                    "label": "Lean Direction (degrees)",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "lean_degree",
+                    "label": "Lean Degrees",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "top_foundation_level",
+                    "label": "Top Foundation Level",
+                    "type": "text_field",
+                    "value_type": "float"
+                }
+            ]
+        ],
+        [
+            "Remarks",
+            [{
+                "key": "remarks",
+                "label": "Remarks",
+                "type": "text_area",
+                "value_type": "string"
+            }]
+        ]
+    ],
+    "earth_description": [
+        [
+            "Color",
+            [{
+                "key": "munsel",
+                "label": "Munsell Number",
+                "type": "munsel_picker",
+                "value_type": "string",
+                "values": [
+                    "2.5Y 3/2",
+                    "2.5Y 3/3",
+                    "2.5Y 4/2",
+                    "2.5Y 4/3",
+                    "2.5Y 4/4",
+                    "2.5Y 5/2",
+                    "2.5Y 5/3",
+                    "2.5Y 5/4",
+                    "2.5Y 5/6",
+                    "2.5Y 6/2",
+                    "2.5Y 6/3",
+                    "2.5Y 6/4",
+                    "2.5Y 6/6",
+                    "2.5Y 6/8",
+                    "2.5Y 7/2",
+                    "2.5Y 7/3",
+                    "2.5Y 7/4",
+                    "2.5Y 7/6",
+                    "2.5Y 7/8",
+                    "2.5Y 8/2",
+                    "2.5Y 8/3",
+                    "2.5Y 8/4",
+                    "2.5Y 8/6",
+                    "2.5Y 8/8",
+                    "2.5YR 2.5/2",
+                    "2.5YR 2.5/3",
+                    "2.5YR 2.5/4",
+                    "2.5YR 3/1",
+                    "2.5YR 3/2",
+                    "2.5YR 3/3",
+                    "2.5YR 3/4",
+                    "2.5YR 3/6",
+                    "2.5YR 4/1",
+                    "2.5YR 4/2",
+                    "2.5YR 4/3",
+                    "2.5YR 4/4",
+                    "2.5YR 4/6",
+                    "2.5YR 4/8",
+                    "2.5YR 5/2",
+                    "2.5YR 5/3",
+                    "2.5YR 5/4",
+                    "2.5YR 5/6",
+                    "2.5YR 5/8",
+                    "2.5YR 6/1",
+                    "2.5YR 6/2",
+                    "2.5YR 6/3",
+                    "2.5YR 6/4",
+                    "2.5YR 6/6",
+                    "2.5YR 6/8",
+                    "2.5YR 7/1",
+                    "2.5YR 7/3",
+                    "2.5YR 7/4",
+                    "5R 2.5/1",
+                    "5R 2.5/2",
+                    "5R 2.5/3",
+                    "5R 2.5/4",
+                    "5R 2.5/6",
+                    "5R 3/1",
+                    "5R 3/2",
+                    "5R 3/3",
+                    "5R 3/4",
+                    "5R 3/6",
+                    "5R 3/8",
+                    "5R 4/1",
+                    "5R 4/2",
+                    "5R 4/3",
+                    "5R 4/4",
+                    "5R 4/6",
+                    "5R 4/8",
+                    "5R 5/1",
+                    "5R 5/2",
+                    "5R 5/3",
+                    "5R 5/4",
+                    "5R 5/6",
+                    "5R 5/8",
+                    "5R 6/1",
+                    "5R 6/2",
+                    "5R 6/3",
+                    "5R 6/4",
+                    "5R 6/6",
+                    "5R 6/8",
+                    "5Y 2.5/1",
+                    "5Y 2.5/2",
+                    "5Y 3/1",
+                    "5Y 3/2",
+                    "5Y 4/1",
+                    "5Y 4/2",
+                    "5Y 4/3",
+                    "5Y 4/4",
+                    "5Y 5/1",
+                    "5Y 5/2",
+                    "5Y 5/3",
+                    "5Y 5/4",
+                    "5Y 5/6",
+                    "5Y 6/1",
+                    "5Y 6/2",
+                    "5Y 6/3",
+                    "5Y 6/4",
+                    "5Y 6/6",
+                    "5Y 6/8",
+                    "5Y 7/1",
+                    "5Y 7/2",
+                    "5Y 7/3",
+                    "5Y 7/4",
+                    "5Y 7/6",
+                    "5Y 7/8",
+                    "5Y 8/1",
+                    "5Y 8/2",
+                    "5Y 8/3",
+                    "5Y 8/4",
+                    "5Y 8/6",
+                    "5Y 8/8",
+                    "5YR 2.5/1",
+                    "5YR 2.5/2",
+                    "5YR 3/1",
+                    "5YR 3/2",
+                    "5YR 3/3",
+                    "5YR 3/4",
+                    "5YR 4/1",
+                    "5YR 4/2",
+                    "5YR 4/3",
+                    "5YR 4/4",
+                    "5YR 4/6",
+                    "5YR 5/1",
+                    "5YR 5/2",
+                    "5YR 5/3",
+                    "5YR 5/4",
+                    "5YR 5/6",
+                    "5YR 5/8",
+                    "5YR 6/1",
+                    "5YR 6/2",
+                    "5YR 6/3",
+                    "5YR 6/4",
+                    "5YR 6/6",
+                    "5YR 6/8",
+                    "5YR 7/1",
+                    "5YR 7/2",
+                    "5YR 7/3",
+                    "5YR 7/4",
+                    "5YR 7/6",
+                    "5YR 7/8",
+                    "5YR 8/1",
+                    "5YR 8/2",
+                    "5YR 8/3",
+                    "5YR 8/4",
+                    "7.5R 2.5/2",
+                    "7.5R 2.5/4",
+                    "7.5R 3/2",
+                    "7.5R 3/4",
+                    "7.5R 3/6",
+                    "7.5R 3/8",
+                    "7.5R 4/2",
+                    "7.5R 4/4",
+                    "7.5R 4/6",
+                    "7.5R 4/8",
+                    "7.5R 5/2",
+                    "7.5R 5/4",
+                    "7.5R 5/6",
+                    "7.5R 5/8",
+                    "7.5R 6/2",
+                    "7.5R 6/4",
+                    "7.5R 6/6",
+                    "7.5R 6/8",
+                    "7.5YR 3/2",
+                    "7.5YR 3/3",
+                    "7.5YR 3/4",
+                    "7.5YR 4/1",
+                    "7.5YR 4/2",
+                    "7.5YR 4/3",
+                    "7.5YR 4/4",
+                    "7.5YR 4/6",
+                    "7.5YR 5/2",
+                    "7.5YR 5/3",
+                    "7.5YR 5/4",
+                    "7.5YR 5/6",
+                    "7.5YR 5/8",
+                    "7.5YR 6/1",
+                    "7.5YR 6/2",
+                    "7.5YR 6/3",
+                    "7.5YR 6/4",
+                    "7.5YR 6/6",
+                    "7.5YR 6/8",
+                    "7.5YR 7/2",
+                    "7.5YR 7/3",
+                    "7.5YR 7/4",
+                    "7.5YR 7/6",
+                    "7.5YR 7/8",
+                    "7.5YR 8/2",
+                    "7.5YR 8/3",
+                    "7.5YR 8/4",
+                    "7.5YR 8/6",
+                    "10R 2.5/1",
+                    "10R 2.5/2",
+                    "10R 3/1",
+                    "10R 3/2",
+                    "10R 3/3",
+                    "10R 3/4",
+                    "10R 3/6",
+                    "10R 4/1",
+                    "10R 4/2",
+                    "10R 4/3",
+                    "10R 4/4",
+                    "10R 4/6",
+                    "10R 4/8",
+                    "10R 5/1",
+                    "10R 5/2",
+                    "10R 5/3",
+                    "10R 5/4",
+                    "10R 5/6",
+                    "10R 5/8",
+                    "10R 6/1",
+                    "10R 6/2",
+                    "10R 6/3",
+                    "10R 6/4",
+                    "10R 6/6",
+                    "10R 6/8",
+                    "10R 8/2",
+                    "10YR 2/1",
+                    "10YR 2/2",
+                    "10YR 3/1",
+                    "10YR 3/2",
+                    "10YR 3/3",
+                    "10YR 3/4",
+                    "10YR 3/6",
+                    "10YR 4/1",
+                    "10YR 4/2",
+                    "10YR 4/3",
+                    "10YR 4/4",
+                    "10YR 4/6",
+                    "10YR 5/1",
+                    "10YR 5/2",
+                    "10YR 5/3",
+                    "10YR 5/4",
+                    "10YR 5/6",
+                    "10YR 5/8",
+                    "10YR 6/1",
+                    "10YR 6/2",
+                    "10YR 6/3",
+                    "10YR 6/4",
+                    "10YR 6/6",
+                    "10YR 6/8",
+                    "10YR 7/1",
+                    "10YR 7/2",
+                    "10YR 7/3",
+                    "10YR 7/4",
+                    "10YR 7/6",
+                    "10YR 7/8",
+                    "10YR 8/1",
+                    "10YR 8/2",
+                    "10YR 8/3",
+                    "10YR 8/4",
+                    "10YR 8/6",
+                    "10YR 8/8",
+                    "Aquamarine",
+                    "Black",
+                    "Blue",
+                    "Brown",
+                    "Cream",
+                    "Dark",
+                    "Gray",
+                    "Green",
+                    "N 2.5/0",
+                    "N 2/0",
+                    "N 3/0",
+                    "N 4/0",
+                    "N 5/0",
+                    "N 6/0",
+                    "N 7/0",
+                    "N 8/0",
+                    "Pink",
+                    "Purple",
+                    "Red",
+                    "Tan",
+                    "Turquoise",
+                    "White",
+                    "Yellow"
+                ]
+            }]
+        ],
+        [
+            "Texture",
+            [{
+                    "key": "texture",
+                    "label": "Texture",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Clay",
+                        "Clay Loam",
+                        "Loam",
+                        "Loamy Sand",
+                        "Sand",
+                        "Sandy Clay",
+                        "Sandy Clay Loam",
+                        "Sandy Loam",
+                        "Silt",
+                        "Silty Clay",
+                        "Silty Clay Loam",
+                        "Silty Loam"
+                    ]
+                },
+                {
+                    "key": "shape_a",
+                    "label": "Particle Shape A %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "shape_as",
+                    "label": "Particle Shape AS %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "shape_sr",
+                    "label": "Particle Shape SR %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "shape_r",
+                    "label": "Particle Shape R %",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Consistence",
+            [{
+                    "key": "hardness",
+                    "label": "Hardness",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Very Loose",
+                        "Loose",
+                        "Somewhat Loose",
+                        "Somewhat Hard",
+                        "Hard",
+                        "Very Hard"
+                    ]
+                },
+                {
+                    "key": "compactness_description_1",
+                    "label": "Compactness Description 1",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Loose",
+                        "Crumbly",
+                        "Friable",
+                        "Firm",
+                        "Gravelly",
+                        "Rubbly"
+                    ]
+                },
+                {
+                    "key": "compactness_degree_1",
+                    "label": "Compactness Degree 1",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Slightly",
+                        "Moderately",
+                        "Very"
+                    ]
+                },
+                {
+                    "key": "compactness_description_2",
+                    "label": "Compactness Description 2",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Loose",
+                        "Crumbly",
+                        "Friable",
+                        "Firm",
+                        "Gravelly",
+                        "Rubbly"
+                    ]
+                },
+                {
+                    "key": "compactness_degree_2",
+                    "label": "Compactness Degree 2",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Slightly",
+                        "Moderately",
+                        "Very"
+                    ]
+                },
+                {
+                    "key": "wetness_description",
+                    "label": "Wetness Description",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Dry",
+                        "Moist",
+                        "Wet"
+                    ]
+                },
+                {
+                    "key": "wetness_degree",
+                    "label": "Wetness Degree",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Slightly",
+                        "Moderately",
+                        "Very"
+                    ]
+                },
+                {
+                    "key": "structure",
+                    "label": "Structure",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Puddling",
+                        "Channeling",
+                        "Sheet Wash",
+                        "Wind",
+                        "Talus",
+                        "Random"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Measurements",
+            [{
+                    "key": "length",
+                    "label": "Length",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "width",
+                    "label": "Width",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "upper_depth",
+                    "label": "Upper Depth",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_depth",
+                    "label": "Lower Depth",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "direction",
+                    "label": "Downslope Direction",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "slope",
+                    "label": "Degree of Slope",
+                    "type": "text_field",
+                    "value_type": "float"
+                }
+            ]
+        ],
+        [
+            "Surface Material",
+            [{
+                    "key": "surface_material",
+                    "label": "Surface Material",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Beaten Earth",
+                        "Lime",
+                        "Plaster",
+                        "Crushed Nari",
+                        "Bricks",
+                        "Cobbles",
+                        "Flagstone"
+                    ]
+                },
+                {
+                    "key": "lam_number",
+                    "label": "Laminated Surface",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Stone Inclusions",
+            [{
+                    "key": "pebbles",
+                    "label": "Pebbles (2mm-6cm)/bskt",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "cobbles",
+                    "label": "Cobbles (6 - 25cm)/bskt",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "boulders",
+                    "label": "Boulders (25 cm+)/bskt",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "stone_distribution",
+                    "label": "Stone Distribution",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Random",
+                        "Patterned",
+                        "Layered"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Earth Inclusions",
+            [{
+                    "key": "nari_frequency",
+                    "label": "Nari Frequency (per m2)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "nari_size",
+                    "label": "Nari Size (in m)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_frequency",
+                    "label": "Brick Frequency (per m2)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "brick_size",
+                    "label": "Brick Size (in m)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "pebble_frequency",
+                    "label": "Pebble Frequency (per m2)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "pebble_size",
+                    "label": "Pebble Size (in m)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "ash_frequency",
+                    "label": "Ash Frequency (per m2)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "ash_size",
+                    "label": "Ash Size (in m)",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "earth_distribution",
+                    "label": "Earth Distribution",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Random",
+                        "Patterned",
+                        "Layered"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Artifact Inclusions",
+            [{
+                    "key": "pottery",
+                    "label": "Pottery Frequency",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "N/A",
+                        "Very Frequent",
+                        "Very Rare"
+                    ]
+                },
+                {
+                    "key": "flint",
+                    "label": "Flint Frequency",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "N/A",
+                        "Very Frequent",
+                        "Very Rare"
+                    ]
+                },
+                {
+                    "key": "glass",
+                    "label": "Glass Totals",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "tesserae",
+                    "label": "Tesserae Totals",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "tabun_fragments",
+                    "label": "Tabun Fragments",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "brick_fragments",
+                    "label": "Brick Fragments",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "roof_tiles",
+                    "label": "Roof Tiles",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "worked_stone",
+                    "label": "Worked Stones",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "burned_stone",
+                    "label": "Burned Stones",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "unfired_clay",
+                    "label": "Unfired Clay",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "architectural_fragments_count",
+                    "label": "Arch. Fragments",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "artifact_distribution",
+                    "label": "Artifact Distribution",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Random",
+                        "Patterned",
+                        "Layered"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Organic Inclusions",
+            [{
+                    "key": "bones",
+                    "label": "Bone Frequency",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "N/A",
+                        "Very Frequent",
+                        "Very Rare"
+                    ]
+                },
+                {
+                    "key": "olive",
+                    "label": "Olive Pits per basket",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "burnt_wood_count",
+                    "label": "Burned Wood per basket",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "burn_wood_size",
+                    "label": "Burnt Wood Avg Size in cm",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "unidentifiable_number",
+                    "label": "UD per basket",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "unidentifiable_size",
+                    "label": "UD SAvg Size in cm",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "organic_distribution",
+                    "label": "Distribution",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Random",
+                        "Patterned",
+                        "Layered"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Remarks",
+            [{
+                "key": "remarks",
+                "label": "Remarks",
+                "type": "text_area",
+                "value_type": "string"
+            }]
+        ]
+    ],
+    "installation_description": [
+        [
+            "Type",
+            [{
+                    "key": "certain",
+                    "label": "Certain",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Pit",
+                        "Silo",
+                        "Bin",
+                        "Kiln",
+                        "Tabun",
+                        "Cistern",
+                        "Reservoir",
+                        "Burial",
+                        "Pavement",
+                        "Foundation Trench",
+                        "Robber Trench",
+                        "Platform",
+                        "Unknown"
+                    ]
+                },
+                {
+                    "key": "probable1",
+                    "label": "Probable",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Pit",
+                        "Silo",
+                        "Bin",
+                        "Kiln",
+                        "Tabun",
+                        "Cistern",
+                        "Reservoir",
+                        "Burial",
+                        "Pavement",
+                        "Foundation Trench",
+                        "Robber Trench",
+                        "Platform",
+                        "Unknown"
+                    ]
+                },
+                {
+                    "key": "possible1",
+                    "label": "Possible 1",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Pit",
+                        "Silo",
+                        "Bin",
+                        "Kiln",
+                        "Tabun",
+                        "Cistern",
+                        "Reservoir",
+                        "Burial",
+                        "Pavement",
+                        "Foundation Trench",
+                        "Robber Trench",
+                        "Platform",
+                        "Unknown"
+                    ]
+                },
+                {
+                    "key": "possible2",
+                    "label": "Possible 2",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Pit",
+                        "Silo",
+                        "Bin",
+                        "Kiln",
+                        "Tabun",
+                        "Cistern",
+                        "Reservoir",
+                        "Burial",
+                        "Pavement",
+                        "Foundation Trench",
+                        "Robber Trench",
+                        "Platform",
+                        "Unknown"
+                    ]
+                }
+            ]
+        ],
+        [
+            "Material",
+            [{
+                    "key": "lime_quality_1",
+                    "label": "Limestone Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "lime_quality_2",
+                    "label": "Limestone Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "limestone_percent",
+                    "label": "Limestone Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "bedrock_quality_1",
+                    "label": "Bedrock Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "bedrock_quality_1",
+                    "label": "Bedrock Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "bedrock_percent",
+                    "label": "Bedrock Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "ceramic_quality_1",
+                    "label": "Ceramic Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "ceramic_quality_2",
+                    "label": "Ceramic Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "ceramic_percent",
+                    "label": "Ceramic Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "mud_quality_1",
+                    "label": "Mud Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mud_quality_2",
+                    "label": "Mud Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mud_percent",
+                    "label": "Mud Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "mudbrick_quality_1",
+                    "label": "Mudbrick Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mudbrick_quality_2",
+                    "label": "Mudbrick Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "mudbrick_percent",
+                    "label": "Mudbrick Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "nari_quality_1",
+                    "label": "Nari Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "nari_quality_2",
+                    "label": "Nari Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "nari_percent",
+                    "label": "Nari Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "plaster_quality_1",
+                    "label": "Plaster Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "plaster_quality_2",
+                    "label": "Plaster Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "plaster_percent",
+                    "label": "Plaster Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "earth_quality_1",
+                    "label": "Earth Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "earth_quality_2",
+                    "label": "Earth Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "earth_percent",
+                    "label": "Earth Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                },
+                {
+                    "key": "stone_quality_1",
+                    "label": "Stone Qualifier 1",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "stone_quality_2",
+                    "label": "Stone Qualifier 2",
+                    "type": "picker",
+                    "values": [
+                        "None",
+                        "Hard",
+                        "Soft",
+                        "Cherty",
+                        "Fossiliferous",
+                        "Decayed",
+                        "Freshly-quarried",
+                        "Reused",
+                        "Oven-baked",
+                        "Sun-baked",
+                        "Unbaked",
+                        "Burned"
+                    ]
+                },
+                {
+                    "key": "stone_percent",
+                    "label": "Stone Percent",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Plan",
+            [{
+                    "key": "plan_type",
+                    "label": "Type",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "Linear",
+                        "Curvilinear",
+                        "Rectangular",
+                        "Triangular",
+                        "Circular",
+                        "Semi-circular",
+                        "Oval",
+                        "Irregular"
+                    ]
+                },
+                {
+                    "key": "plan_quality_1",
+                    "label": "Quality 1",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "None",
+                        "Rounded",
+                        "Squared",
+                        "Nearly",
+                        "Slightly"
+                    ]
+                },
+                {
+                    "key": "plan_quality_2",
+                    "label": "Quality 2",
+                    "type": "picker",
+                    "value_type": "string",
+                    "values": [
+                        "None",
+                        "Rounded",
+                        "Squared",
+                        "Nearly",
+                        "Slightly"
+                    ]
+                },
+                {
+                    "key": "plan_remarks",
+                    "label": "Remarks",
+                    "type": "text_field",
+                    "value_type": "string"
+                }
+            ]
+        ],
+        [
+            "Lining",
+            [{
+                "key": "lining",
+                "label": "Lining",
+                "type": "picker",
+                "type_value": "string",
+                "values": [
+                    "None",
+                    "Cement",
+                    "Ceramic",
+                    "Clay",
+                    "Plaster",
+                    "Stone",
+                    "Brick"
+                ]
+            }]
+        ],
+        [
+            "Measurements",
+            [{
+                    "key": "length",
+                    "label": "Greatest Length in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "upper_width",
+                    "label": "Greatest width in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_width",
+                    "label": "Smallest width in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "upper_height",
+                    "label": "Greatest Height in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "lower_height",
+                    "label": "Lowest Height in meters",
+                    "type": "text_field",
+                    "value_type": "float"
+                },
+                {
+                    "key": "orientation",
+                    "label": "Orientation (degrees)",
+                    "type": "text_field",
+                    "value_type": "integer"
+                }
+            ]
+        ],
+        [
+            "Remarks",
+            [{
+                "key": "remarks",
+                "label": "Remarks",
+                "type": "text_area",
+                "value_type": "string"
+            }]
+        ]
+    ],
+    "lookups": {
+        "pot_form": ["", "Amphoriskos", "Attic", "Baasi", "Baking Tray", "Base", "Basin", "Body", "Bottle", "Bowl", "Bowl, Carinated", "Bowl, Miniature", "Chalice", "Cooking Bowl", "Cooking Jug", "Cooking Pot", "Cup", "Decanter", "Flask", "Goblet", "Ibreek", "Incense Burner", "Jar", "Jar, Holemouth", "Jar, Necked", "Jar\/Jug", "Jug", "Jug\/Juglet", "Juglet", "Kernos", "Krater", "Lamp", "Lid", "Model Shrine", "Moratarium", "Mortar", "Mortarium", "Mug", "Other", "Painted Body", "Pipe", "Pithos", "Pithos Handle", "Plate", "Platter", "Pot", "Pyxis", "Rhyton", "Roof Tile", "Scoop", "Stand", "Strainer", "Tripod", "Tripod Cup", "Unguentarium", "Vat", "Zir"],
+        "age": ["", "Neolithic", "Chalcolithic", "Bronze Age", "Early Bronze", "Early Bronze 1", "Early Bronze 2", "Early Bronze 3", "Early Bronze 4", "Middle Bronze", "Middle Bronze 2", "MB2 through LB", "MB2\/LB", "Late Bronze", "Late Bronze 1", "Late Bronze 2", "LB to Iron 1", "LB-Iron 1 Trans", "Iron", "Early Iron 1", "Iron 1", "Late Iron 1", "Late Iron 1Trans", "Late Iron 1\/Early Iron 2", "Early Iron 2", "Iron 2", "Iron 2A", "Iron 2B", "Iron 2B-C", "Iron 2C", "Late Iron 2", "Late Iron 2\/Persian", "Persian", "Pre-Classical", "Persian to Hellenistic", "Classical", "Hellenistic", "Early Hellenistic", "Late Hellenistic", "Hel\/Rom", "Roman", "Nabatean", "Early Roman", "Late Roman", "Roman through Byzantine", "Roman\/Byzantine", "Byzantine", "Early Byzantine", "Late Byzantine", "Byz\/Early Islamic", "Islamic", "Early Islamic", "Umayyad", "Abbasid", "Fatimid", "Crusader", "Middle Islamic", "Ayyubid\/Mamluk", "Mamluk", "Late Islamic", "Turkish", "Modern", "Undetermined"],
+        "time_level": ["", "Early", "Mid", "Late", "Possible", "Pre", "Post", "Transitional"],
+        "question": ["", "1 bod", "1 bod?", "1 poss", "1 prob", "1bo", "1bod", "2 bods", "2 poss", "2 prob", "3", "3 poss", "5", "?", "All bods", "Bod", "Bods", "Bods?", "Eisl", "MB", "Multiple", "Poss", "Poss Bods", "Possible", "Prob", "Probable", "all bods", "bod", "bods", "eb", "eir2", "ir1", "kr", "lir2", "one bod", "poss", "prob", "prob bods"],
+        "munsell": [
+            "2.5Y 3/2",
+            "2.5Y 3/3",
+            "2.5Y 4/2",
+            "2.5Y 4/3",
+            "2.5Y 4/4",
+            "2.5Y 5/2",
+            "2.5Y 5/3",
+            "2.5Y 5/4",
+            "2.5Y 5/6",
+            "2.5Y 6/2",
+            "2.5Y 6/3",
+            "2.5Y 6/4",
+            "2.5Y 6/6",
+            "2.5Y 6/8",
+            "2.5Y 7/2",
+            "2.5Y 7/3",
+            "2.5Y 7/4",
+            "2.5Y 7/6",
+            "2.5Y 7/8",
+            "2.5Y 8/2",
+            "2.5Y 8/3",
+            "2.5Y 8/4",
+            "2.5Y 8/6",
+            "2.5Y 8/8",
+            "2.5YR 2.5/2",
+            "2.5YR 2.5/3",
+            "2.5YR 2.5/4",
+            "2.5YR 3/1",
+            "2.5YR 3/2",
+            "2.5YR 3/3",
+            "2.5YR 3/4",
+            "2.5YR 3/6",
+            "2.5YR 4/1",
+            "2.5YR 4/2",
+            "2.5YR 4/3",
+            "2.5YR 4/4",
+            "2.5YR 4/6",
+            "2.5YR 4/8",
+            "2.5YR 5/2",
+            "2.5YR 5/3",
+            "2.5YR 5/4",
+            "2.5YR 5/6",
+            "2.5YR 5/8",
+            "2.5YR 6/1",
+            "2.5YR 6/2",
+            "2.5YR 6/3",
+            "2.5YR 6/4",
+            "2.5YR 6/6",
+            "2.5YR 6/8",
+            "2.5YR 7/1",
+            "2.5YR 7/3",
+            "2.5YR 7/4",
+            "5R 2.5/1",
+            "5R 2.5/2",
+            "5R 2.5/3",
+            "5R 2.5/4",
+            "5R 2.5/6",
+            "5R 3/1",
+            "5R 3/2",
+            "5R 3/3",
+            "5R 3/4",
+            "5R 3/6",
+            "5R 3/8",
+            "5R 4/1",
+            "5R 4/2",
+            "5R 4/3",
+            "5R 4/4",
+            "5R 4/6",
+            "5R 4/8",
+            "5R 5/1",
+            "5R 5/2",
+            "5R 5/3",
+            "5R 5/4",
+            "5R 5/6",
+            "5R 5/8",
+            "5R 6/1",
+            "5R 6/2",
+            "5R 6/3",
+            "5R 6/4",
+            "5R 6/6",
+            "5R 6/8",
+            "5Y 2.5/1",
+            "5Y 2.5/2",
+            "5Y 3/1",
+            "5Y 3/2",
+            "5Y 4/1",
+            "5Y 4/2",
+            "5Y 4/3",
+            "5Y 4/4",
+            "5Y 5/1",
+            "5Y 5/2",
+            "5Y 5/3",
+            "5Y 5/4",
+            "5Y 5/6",
+            "5Y 6/1",
+            "5Y 6/2",
+            "5Y 6/3",
+            "5Y 6/4",
+            "5Y 6/6",
+            "5Y 6/8",
+            "5Y 7/1",
+            "5Y 7/2",
+            "5Y 7/3",
+            "5Y 7/4",
+            "5Y 7/6",
+            "5Y 7/8",
+            "5Y 8/1",
+            "5Y 8/2",
+            "5Y 8/3",
+            "5Y 8/4",
+            "5Y 8/6",
+            "5Y 8/8",
+            "5YR 2.5/1",
+            "5YR 2.5/2",
+            "5YR 3/1",
+            "5YR 3/2",
+            "5YR 3/3",
+            "5YR 3/4",
+            "5YR 4/1",
+            "5YR 4/2",
+            "5YR 4/3",
+            "5YR 4/4",
+            "5YR 4/6",
+            "5YR 5/1",
+            "5YR 5/2",
+            "5YR 5/3",
+            "5YR 5/4",
+            "5YR 5/6",
+            "5YR 5/8",
+            "5YR 6/1",
+            "5YR 6/2",
+            "5YR 6/3",
+            "5YR 6/4",
+            "5YR 6/6",
+            "5YR 6/8",
+            "5YR 7/1",
+            "5YR 7/2",
+            "5YR 7/3",
+            "5YR 7/4",
+            "5YR 7/6",
+            "5YR 7/8",
+            "5YR 8/1",
+            "5YR 8/2",
+            "5YR 8/3",
+            "5YR 8/4",
+            "7.5R 2.5/2",
+            "7.5R 2.5/4",
+            "7.5R 3/2",
+            "7.5R 3/4",
+            "7.5R 3/6",
+            "7.5R 3/8",
+            "7.5R 4/2",
+            "7.5R 4/4",
+            "7.5R 4/6",
+            "7.5R 4/8",
+            "7.5R 5/2",
+            "7.5R 5/4",
+            "7.5R 5/6",
+            "7.5R 5/8",
+            "7.5R 6/2",
+            "7.5R 6/4",
+            "7.5R 6/6",
+            "7.5R 6/8",
+            "7.5YR 3/2",
+            "7.5YR 3/3",
+            "7.5YR 3/4",
+            "7.5YR 4/1",
+            "7.5YR 4/2",
+            "7.5YR 4/3",
+            "7.5YR 4/4",
+            "7.5YR 4/6",
+            "7.5YR 5/2",
+            "7.5YR 5/3",
+            "7.5YR 5/4",
+            "7.5YR 5/6",
+            "7.5YR 5/8",
+            "7.5YR 6/1",
+            "7.5YR 6/2",
+            "7.5YR 6/3",
+            "7.5YR 6/4",
+            "7.5YR 6/6",
+            "7.5YR 6/8",
+            "7.5YR 7/2",
+            "7.5YR 7/3",
+            "7.5YR 7/4",
+            "7.5YR 7/6",
+            "7.5YR 7/8",
+            "7.5YR 8/2",
+            "7.5YR 8/3",
+            "7.5YR 8/4",
+            "7.5YR 8/6",
+            "10R 2.5/1",
+            "10R 2.5/2",
+            "10R 3/1",
+            "10R 3/2",
+            "10R 3/3",
+            "10R 3/4",
+            "10R 3/6",
+            "10R 4/1",
+            "10R 4/2",
+            "10R 4/3",
+            "10R 4/4",
+            "10R 4/6",
+            "10R 4/8",
+            "10R 5/1",
+            "10R 5/2",
+            "10R 5/3",
+            "10R 5/4",
+            "10R 5/6",
+            "10R 5/8",
+            "10R 6/1",
+            "10R 6/2",
+            "10R 6/3",
+            "10R 6/4",
+            "10R 6/6",
+            "10R 6/8",
+            "10R 8/2",
+            "10YR 2/1",
+            "10YR 2/2",
+            "10YR 3/1",
+            "10YR 3/2",
+            "10YR 3/3",
+            "10YR 3/4",
+            "10YR 3/6",
+            "10YR 4/1",
+            "10YR 4/2",
+            "10YR 4/3",
+            "10YR 4/4",
+            "10YR 4/6",
+            "10YR 5/1",
+            "10YR 5/2",
+            "10YR 5/3",
+            "10YR 5/4",
+            "10YR 5/6",
+            "10YR 5/8",
+            "10YR 6/1",
+            "10YR 6/2",
+            "10YR 6/3",
+            "10YR 6/4",
+            "10YR 6/6",
+            "10YR 6/8",
+            "10YR 7/1",
+            "10YR 7/2",
+            "10YR 7/3",
+            "10YR 7/4",
+            "10YR 7/6",
+            "10YR 7/8",
+            "10YR 8/1",
+            "10YR 8/2",
+            "10YR 8/3",
+            "10YR 8/4",
+            "10YR 8/6",
+            "10YR 8/8",
+            "Aquamarine",
+            "Black",
+            "Blue",
+            "Brown",
+            "Cream",
+            "Dark",
+            "Gray",
+            "Green",
+            "N 2.5/0",
+            "N 2/0",
+            "N 3/0",
+            "N 4/0",
+            "N 5/0",
+            "N 6/0",
+            "N 7/0",
+            "N 8/0",
+            "Pink",
+            "Purple",
+            "Red",
+            "Tan",
+            "Turquoise",
+            "White",
+            "Yellow"
+        ]
+    },
+    "lookup_labels": {
+        "pot_form": "Pottery Form",
+        "age": "Period",
+        "time_level": "Period modifier",
+        "question": "Reading modifier"
+    }
+}
