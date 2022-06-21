@@ -22,7 +22,7 @@ RUN echo "gem: --no-ri --no-rdoc" > /etc/gemrc
 
 COPY . .
 RUN bundle install
-RUN bin/rake assets:precompile
+RUN RAILS_ENV=production bin/rake assets:precompile
 
 EXPOSE 3000
 CMD ["bin/rails", "server", "-b", "0.0.0.0"]
