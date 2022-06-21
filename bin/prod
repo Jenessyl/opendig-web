@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 export RAILS_ENV=production
 bin/rails assets:precompile
