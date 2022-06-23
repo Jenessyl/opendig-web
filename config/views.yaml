@@ -4,17 +4,34 @@
   "_id": _design/opendig
   :views:
     :config:
-      :map: "function(doc){if (doc.type == 'config') emit(doc, doc);};"
+      :map: "function(doc){if (doc.type == 'config') emit(doc, doc);}"
     :fields:
-      :map: "function(doc){if (doc.field) emit(doc.field,doc.field);};"
-      :reduce: "function(keys,values){return true;};"
+      :map: "function(doc){if (doc.field) emit(doc.field,doc.field);}"
+      :reduce: "function(keys,values){return true;}"
     :squares:
-      :map: "function(doc){if (doc.square) emit([doc.field, doc.square], doc.field);};"
-      :reduce: "function(keys,values){return true;};"
+      :map: "function(doc){if (doc.square) emit([doc.field, doc.square], doc.field);}"
+      :reduce: "function(keys,values){return true;}"
     :loci:
-      :map: "function(doc){if (doc.code) emit([doc.field, doc.square, doc.code, doc._id, doc.locus_type, doc.designation, doc.age],doc.square);};"
-      :reduce: "function(keys,values){return true;};"
+      :map: "function(doc){if (doc.code) emit([doc.field, doc.square, doc.code, doc._id, doc.locus_type, doc.designation, doc.age],doc.square);}"
+      :reduce: "function(keys,values){return true;}"
     :all_loci:
-      :map: "function(doc){if (doc.code) emit(doc.field + '.' + doc.square + '.' + doc.code, doc.field + '.' + doc.square + '.' + doc.code);};"
+      :map: "function(doc){if (doc.code) emit(doc.field + '.' + doc.square + '.' + doc.code, doc.field + '.' + doc.square + '.' + doc.code);}"
     :locus:
-      :map: "function(doc){if (doc.code) emit([doc.field, doc.square, doc.code],doc);};"
+      :map: "function(doc){if (doc.code) emit([doc.field, doc.square, doc.code],doc);}"
+    :pails:
+      :map: >
+        function (doc) {
+          if (doc.pails) {
+            for (var pail in doc.pails) {
+              emit(doc.field + '.' + doc.square, [doc.pails[pail].pail_number, doc.code, doc.pails[pail].pail_date]);
+            }
+          }
+        }
+      :reduce: "function(keys,values){return true;}"
+    :bad_loci:
+      :map: >
+        function (doc) {
+          if (doc.code && doc.code.charAt(0) == '9') {
+            emit([doc.field + '.' + doc.square + ':' + doc.code], doc);
+          }
+        }

@@ -3,9 +3,13 @@
     <h1>Loci for <%= @field %>.<%= @square %></h1>
   </div>
   <div class="col-2 align-bottom">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newLocus">
+    <%= link_to "Pails for Square", field_square_pails_path(@field, @square), class: "btn btn-primary float-right" %>
+  </div>
+  <div class="col-2 align-bottom">
+
+    <%# <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newLocus">
       New Locus
-    </button>
+    </button> %>
     <!-- Modal -->
     <div class="modal fade" id="newLocus" tabindex="-1" role="dialog" aria-labelledby="newLocusLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
