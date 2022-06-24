@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-10 align-bottom">
-    <h1>Squares for <%= @field %></h1>
+    <h1>Squares for <%= @area %></h1>
   </div>
   <div class="col-2 align-bottom">
-    <%= link_to "New Square", new_field_square_path(@field), class: "btn btn-primary float-right" %>
+    <%= link_to "New Square", new_area_square_path(@area), class: "btn btn-primary float-right" %>
   </div>
 </div>
 <div class="row">
@@ -11,11 +11,11 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-        <li class="breadcrumb-item active" aria-current="page"><%= "Field #{@field}" %></li>
+        <li class="breadcrumb-item active" aria-current="page"><%= "Area #{@area}" %></li>
       </ol>
     </nav>
   </div>
 </div>
 <% @squares.each do |square| %>
-  <p><%= link_to square, field_square_loci_path(@field, square) %></p>
+  <p><%= link_to square, area_square_loci_path(@area, square) %></p>
 <% end %>

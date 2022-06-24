@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-10 align-bottom">
-    <h1>Pails for <%= @field %>.<%= @square %></h1>
+    <h1>Pails for <%= @area %>.<%= @square %></h1>
   </div>
   <div class="col-2 align-bottom">
-    <%= link_to "Back to Loci", field_square_loci_path(@field, @square), class: "btn btn-primary float-right" %>
+    <%= link_to "Back to Loci", area_square_loci_path(@area, @square), class: "btn btn-primary float-right" %>
   </div>
 </div>
 <div class="row">
@@ -11,7 +11,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-        <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
+        <li class="breadcrumb-item"><%= link_to "Area #{@area}", area_squares_path(@area) %></li>
         <li class="breadcrumb-item active" aria-current="page"><%= "Pails for square #{@square}" %></li>
       </ol>
     </nav>
@@ -36,7 +36,7 @@
     <%= pail.pail_number %>
   </div>
   <div class="col-3">
-    <%= link_to "#{pail.locus}", field_square_locus_path(@field, @square, pail.locus) %>
+    <%= link_to "#{pail.locus}", area_square_locus_path(@area, @square, pail.locus) %>
   </div>
   <div class="col-6">
     <%= pail.pail_date %>

@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-10 align-bottom">
-    <h1>Fields</h1>
+    <h1>Areas</h1>
   </div>
   <div class="col-2 align-bottom">
-    <%= link_to "New Field", new_field_path, class: "btn btn-primary float-right" %>
+    <%= link_to "New area", new_area_path, class: "btn btn-primary float-right" %>
   </div>
 </div>
 <div class="row">
@@ -16,6 +16,6 @@
   </div>
 </div>
 
-<% @fields.each do |field| %>
-  <p><%= link_to field["key"], field_squares_path(field["key"]) %></p>
+<% @areas.each do |area| %>
+  <p><%= link_to area["key"], area_squares_path(area["key"]) %></p>
 <% end %>

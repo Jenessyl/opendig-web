@@ -1,10 +1,10 @@
 <div class="container">
   <div class="row">
     <div class="col-10 align-bottom">
-      <h1>Locus <%= @field %>.<%= @square %>.<%= @locus_code %></h1>
+      <h1>Locus <%= @area %>.<%= @square %>.<%= @locus_code %></h1>
     </div>
     <div class="col-2 align-bottom">
-      <%#= link_to "Edit", edit_field_square_locus_path(@field, @square, @locus_code), class: "btn btn-primary float-right" %>
+      <%#= link_to "Edit", edit_area_square_locus_path(@area, @square, @locus_code), class: "btn btn-primary float-right" %>
     </div>
   </div>
   <div class="row">
@@ -12,9 +12,9 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-          <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
-          <li class="breadcrumb-item"><%= link_to "Square #{@square}", field_square_loci_path(@field, @square) %></li>
-          <li class="breadcrumb-item active" aria-current="page">Locus <%= @field %>.<%= @square %>.<%= @locus_code %></li>
+          <li class="breadcrumb-item"><%= link_to "Area #{@area}", area_squares_path(@area) %></li>
+          <li class="breadcrumb-item"><%= link_to "Square #{@square}", area_square_loci_path(@area, @square) %></li>
+          <li class="breadcrumb-item active" aria-current="page">Locus <%= @area %>.<%= @square %>.<%= @locus_code %></li>
         </ol>
       </nav>
     </div>

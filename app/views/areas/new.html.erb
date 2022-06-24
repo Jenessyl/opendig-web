@@ -1,0 +1,6 @@
+<h1>New Area</h1>
+<%= form_tag(areas_path) do %>
+  <%= label_tag(:area, "New Area:") %>
+  <%= text_field_tag(:area) %>
+  <%= submit_tag("Create Area") %>
+<% end %>

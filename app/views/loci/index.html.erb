@@ -1,15 +1,15 @@
 <div class="row">
-  <div class="col-10 align-bottom">
-    <h1>Loci for <%= @field %>.<%= @square %></h1>
+  <div class="col-8 align-bottom">
+    <h1>Loci for <%= @area %>.<%= @square %></h1>
   </div>
   <div class="col-2 align-bottom">
-    <%= link_to "Pails for Square", field_square_pails_path(@field, @square), class: "btn btn-primary float-right" %>
+    <%= link_to "Pails for Square", area_square_pails_path(@area, @square), class: "btn btn-primary float-right" %>
   </div>
   <div class="col-2 align-bottom">
 
-    <%# <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newLocus">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newLocus">
       New Locus
-    </button> %>
+    </button>
     <!-- Modal -->
     <div class="modal fade" id="newLocus" tabindex="-1" role="dialog" aria-labelledby="newLocusLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -21,10 +21,10 @@
             </button>
           </div>
           <div class="modal-body">
-            <p><%= link_to "New Architecture Locus", new_field_square_locus_path(@field, @square, type: 'Architecture') %></p>
-            <p><%= link_to "New Burial Locus", new_field_square_locus_path(@field, @square, type: 'Burial') %></p>
-            <p><%= link_to "New Earth Locus", new_field_square_locus_path(@field, @square, type: 'Earth') %></p>
-            <p><%= link_to "New Installation Locus", new_field_square_locus_path(@field, @square, type: 'Installation') %></p>
+            <p><%= link_to "New Architecture Locus", new_area_square_locus_path(@area, @square, type: 'Architecture') %></p>
+            <p><%= link_to "New Burial Locus", new_area_square_locus_path(@area, @square, type: 'Burial') %></p>
+            <p><%= link_to "New Earth Locus", new_area_square_locus_path(@area, @square, type: 'Earth') %></p>
+            <p><%= link_to "New Installation Locus", new_area_square_locus_path(@area, @square, type: 'Installation') %></p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -39,7 +39,7 @@
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-        <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
+        <li class="breadcrumb-item"><%= link_to "Area #{@area}", area_squares_path(@area) %></li>
         <li class="breadcrumb-item active" aria-current="page"><%= "Square #{@square}" %></li>
       </ol>
     </nav>
@@ -49,7 +49,7 @@
 <% @loci.each do |locus| %>
 <div class="row">
   <div class="col-3">
-    <%= link_to "#{locus.code}", field_square_locus_path(@field, @square, locus.code) %>
+    <%= link_to "#{locus.code}", area_square_locus_path(@area, @square, locus.code) %>
   </div>
   <div class="col-3">
     <%= locus.locus_type %>

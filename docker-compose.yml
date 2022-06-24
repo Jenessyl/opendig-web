@@ -1,6 +1,3 @@
-volumes:
-  couchdb-data: {}
-
 services:
   app:
     build: .
@@ -19,4 +16,4 @@ services:
     ports:
       - 6984:5984
     volumes:
-      - couchdb-data:/usr/local/var/lib/couchdb
+      - ./couchdb-data:/opt/couchdb/data

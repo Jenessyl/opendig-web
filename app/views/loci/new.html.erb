@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col-10 align-bottom">
-      <h1>New <%= @locus['locus_type'] %> Locus in <%= @field %>.<%= @square %></h1>
+      <h1>New <%= @locus['locus_type'] %> Locus in <%= @area %>.<%= @square %></h1>
     </div>
     <div class="col-2 align-bottom">
     </div>
@@ -11,16 +11,16 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-          <li class="breadcrumb-item"><%= link_to "Field #{@field}", field_squares_path(@field) %></li>
-          <li class="breadcrumb-item"><%= link_to "Square #{@square}", field_square_loci_path(@field, @square) %></li>
-          <li class="breadcrumb-item active" aria-current="page">New Locus in <%= @field %>.<%= @square %></li>
+          <li class="breadcrumb-item"><%= link_to "Area #{@area}", area_squares_path(@area) %></li>
+          <li class="breadcrumb-item"><%= link_to "Square #{@square}", area_square_loci_path(@area, @square) %></li>
+          <li class="breadcrumb-item active" aria-current="page">New Locus in <%= @area %>.<%= @square %></li>
         </ol>
       </nav>
     </div>
   </div>
 </div>
 
-<%= form_with(url: field_square_loci_path(@field, @square), method: 'post', local: true, id: 'locus_form') do |locus_form| %>
+<%= form_with(url: area_square_loci_path(@area, @square), method: 'post', local: true, id: 'locus_form') do |locus_form| %>
   <input type="hidden" id="locus[locus_type]" name="locus[locus_type]" value="<%= @locus['locus_type'] %>">
   <%= render 'form', locus_form: locus_form %>
 <% end %>
