@@ -13,12 +13,3 @@ development:
 test:
   <<: *default
   suffix: test
-
-production:
-  protocol: 'https'
-  host: couchdb.rekrei.org
-  port: 6984
-  username: admin
-  password: jugqoO9K!&Cp7jBT
-  prefix: opendig
-  suffix: production

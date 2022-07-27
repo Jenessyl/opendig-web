@@ -55,7 +55,7 @@
               if (pail.finds) {
                 for (var _find in pail.finds) {
                   var find = pail.finds[_find];
-                  emit(pail_year, [doc.area + '.' + doc.square + '.' + doc.code, pail.pail_number, find.field_number, find.type, find.remarks, doc._id])
+                  emit(pail_year, [doc.area + '.' + doc.square + '.' + doc.code, pail.pail_number, find.field_number, find.type, find.remarks, find.state, doc._id])
                 }
               }
             }

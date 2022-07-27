@@ -3,8 +3,24 @@ class RegistrarController < ApplicationController
 
   def index
     @seasons = @db.view('opendig/seasons', {group: true})["rows"].map{|row| row["key"]}.sort.reverse
+
+    status = {
+      all: 'all',
+      unregistered: 'unregistered',
+      initial: 'initial registration',
+      wip: 'WIP',
+      completed: 'registrarion complete'
+    }
+
+
+    @status = status[params[:status]&.to_sym] || status[:unregistered]
+
     @selected_season = params[:season] || @seasons.first
-    @finds = Registrar.all_by_season(@selected_season.to_i)
+    if @status == 'all'
+      @finds = Registrar.all_by_season(@selected_season.to_i)
+    else
+      @finds = Registrar.all_by_season(@selected_season.to_i).select{|reg| reg.state == @status}
+    end
   end
 
   def show
