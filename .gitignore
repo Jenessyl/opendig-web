@@ -36,3 +36,5 @@
 
 # ignore secrets for kustomize
 infrastructure/app/**/couchdb.yml
+
+.byebug_history
