@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :areas, only: [:index, :new, :create] do
     resources :squares, only: [:index, :new, :create] do
       resources :pails, only: [:index]
+      resources :finds, only: [:index]
       resources :loci, only: [:index, :show, :edit, :new, :create, :update]
     end
   end

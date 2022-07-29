@@ -28,6 +28,23 @@
           }
         }
       :reduce: "function(keys,values){return true;}"
+    :finds_for_square:
+      :map: >
+        function (doc) {
+          if (doc.pails) {
+            for (var _pail in doc.pails) {
+              var pail = doc.pails[_pail];
+              var pail = doc.pails[_pail];
+              if (pail.finds) {
+                for (var _find in pail.finds) {
+                  var find = pail.finds[_find];
+                  emit([doc.area + '.' + doc.square], [doc.code, pail.pail_number, pail.pail_date, find.field_number, find.type, find.remarks, doc._id])
+                }
+              }
+            }
+          }
+        }
+      :reduce: "function(keys,values){return true;}"
     :finds:
       :map: >
         function (doc) {
