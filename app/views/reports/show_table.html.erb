@@ -5,13 +5,15 @@
       <h2>Balu'a Regional Archaeology Project</h2>
       <h3><%= @season %> <%= @report_type_title %> Report</h3>
   </div>
-</div>
-<table>
-  <tr>
-    <% @field_set.each do |field_set| %>
-      <th><%= field_set.keys.first %></th>
-    <% end %>
-  </tr>
+  <table>
+  <thead>
+    <tr>
+      <% @field_set.each do |field_set| %>
+        <th><%= field_set.keys.first %></th>
+      <% end %>
+    </tr>
+  </thead>
+  <tbody>
   <% @rows.each do |row| %>
     <tr>
       <% @field_set.each do |field_set| %>
@@ -19,4 +21,6 @@
       <% end %>
     </tr>
   <% end %>
-</table>
+  </tbody>
+  </table>
+</div>

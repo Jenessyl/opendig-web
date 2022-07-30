@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <h1>Khirbat al-Balu'a</h1>
+      <h2>Balu'a Regional Archaeology Project</h2>
+      <h3><%= @season %> <%= @report_type_title %> Report</h3>
+  </div>
+  <% @rows.each do |row| %>
+    <div class="row">
+      <div class="col-9">
+        <ul class="list-inline">
+          <% @field_set.each do |field_set| %>
+              <li class="list-inline-item"><b><%= field_set.keys.first %></b>&nbsp;&nbsp;<%= row.dig('value',field_set.values.first) %></li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-3">
+        <% if Find.can_have_image?(row.dig('value','registration_number')) %>
+          <%= image_tag(Find.get_presigned_url(row.dig('value','registration_number')), class: 'find-img-small') %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

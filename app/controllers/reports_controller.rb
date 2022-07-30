@@ -32,7 +32,9 @@ class ReportsController < ApplicationController
     @field_set = @descriptions['field_sets'][field_set_selector]
 
     respond_to do |format|
-      format.html
+      format.html do
+        render template: "reports/show_#{style}"
+      end
       format.pdf do
         render pdf: "#{@season}_#{@report_type}_report",
         template: "reports/pdf_#{style}",

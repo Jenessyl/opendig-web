@@ -18,7 +18,9 @@
         <% end %>
       </td>
       <td class="report_image">
-        <%= image_tag(Find.get_presigned_url(row.dig('value','registration_number')), class: 'find-img') %>
+        <% if Find.can_have_image?(row.dig('value','registration_number')) %>
+          <%= image_tag(Find.get_presigned_url(row.dig('value','registration_number')), class: 'find-img') %>
+        <% end %>
       </td>
     </tr>
   <% end %>

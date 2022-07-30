@@ -35,7 +35,9 @@
     <% end %>
   </div>
   <div class="col-4">
+    <% if Find.can_have_image?(@find.dig('registration_number')) %>
       <%= image_tag(Find.get_presigned_url(@find.dig('registration_number')), class: 'find-img') %>
+    <% end %>
   </div>
 </div>
 <hr/>

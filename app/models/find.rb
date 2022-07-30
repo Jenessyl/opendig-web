@@ -15,20 +15,28 @@ class Find
     [locus, pail_number, pail_date, field_number, type, remarks, gis_id, id]
   end
 
+  def self.can_have_image?(registration_number)
+    return false if registration_number.upcase.start_with?("S")
+    true
+  end
 
   def self.get_presigned_url(registration_number)
-    bucket = Rails.application.config.s3_bucket
-    object_key = "#{registration_number}.jpg"
-    if bucket.object(object_key).exists?
-      begin
-        url = bucket.object(object_key).presigned_url(:get)
-      rescue Aws::Errors::ServiceError => e
-        Rails.logger.error "Couldn't create presigned URL for #{bucket.name}:#{object_key}. Here's why: #{e.message}"
-        url = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'
-
-      end
-    else
+    unless Find.can_have_image?(registration_number)
       url = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'
+    else
+      bucket = Rails.application.config.s3_bucket
+      object_key = "#{registration_number}.jpg"
+      if bucket.object(object_key).exists?
+        begin
+          url = bucket.object(object_key).presigned_url(:get)
+        rescue Aws::Errors::ServiceError => e
+          Rails.logger.error "Couldn't create presigned URL for #{bucket.name}:#{object_key}. Here's why: #{e.message}"
+          url = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'
+
+        end
+      else
+        url = 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg'
+      end
     end
 
     url
