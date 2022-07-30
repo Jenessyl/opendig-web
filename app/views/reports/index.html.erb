@@ -1,0 +1,18 @@
+<% @seasons.each do |season| %>
+  <div class="container row">
+    <div class="col-12">
+      <h1><%= season %></h1>
+    </div>
+    <div class="row">
+      <% @report_types.each do |report, report_key| %>
+        <div class="col-3">
+          <h2><%= report %> Report</h2>
+          <ul>
+            <li><%= link_to 'Preview Report', report_path(id: season, report_type: report_key) %></li>
+            <li><%= link_to 'Download Report', report_path(id: season, report_type: report_key, format: :pdf) %></li>
+          </ul>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

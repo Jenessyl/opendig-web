@@ -21,18 +21,21 @@
   </div>
 </div>
 <div class="row">
-  <div class="col">
-  <h2>General Information</h2>
-  <% @descriptions['finds'].each do |item| %>
-    <div class="row">
-      <div class="col-4">
-        <%= item["label"] %>
+  <div class="col-8">
+    <h2>General Information</h2>
+    <% @descriptions['finds'].each do |item| %>
+      <div class="row">
+        <div class="col-4">
+          <%= item["label"] %>
+        </div>
+        <div class="col-8">
+          <%= output(@find.dig(item["key"]), item["type"]) %>
+        </div>
       </div>
-      <div class="col-8">
-        <%= output(@find.dig(item["key"]), item["type"]) %>
-      </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
+  <div class="col-4">
+      <%= image_tag(Find.get_presigned_url(@find.dig('registration_number')), class: 'find-img') %>
   </div>
 </div>
 <hr/>

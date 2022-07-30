@@ -2534,5 +2534,62 @@
                 "registration complete"
             ]
         }
-    ]
+    ],
+    "reports": {
+        "artifacts": {
+            "title": "Artifacts",
+            "field_set": "artifacts_and_objects",
+            "style": "photo"
+        },
+        "samples": {
+            "title": "Samples",
+            "field_set": "samples",
+            "style": "table"
+        },
+        "objects": {
+            "title": "Objects",
+            "field_set": "artifacts_and_objects",
+            "style": "photo"
+        },
+        "bones": {
+            "title": "Bones",
+            "field_set": "bones",
+            "style": "table"
+        }
+    },
+    "field_sets": {
+        "bones": [
+            {"Area": "area"},
+            {"Square": "square"},
+            {"Locus": "locus"},
+            {"Pail": "pail"},
+            {"Pail Date": "date"}
+        ],
+        "artifacts_and_objects": [
+            {"Registration #": "registration_number"},
+            {"Season": "season"},
+            {"Area": "area"},
+            {"Square": "square"},
+            {"Locus": "locus"},
+            {"Pail #": "pail_number"},
+            {"Field #": "field_number"},
+            {"Designation": "designation"},
+            {"Modifier 1": "modifier_1"},
+            {"Modifier 2": "modifier_2"},
+            {"Material": "material"},
+            {"Decoration": "decoration"},
+            {"Allocation": "allocation"}
+        ],
+        "samples": [
+            {"Registration #": "registration_number"},
+            {"Season": "season"},
+            {"Area": "area"},
+            {"Square": "square"},
+            {"Locus": "locus"},
+            {"Pail #": "pail_number"},
+            {"Field #": "field_number"},
+            {"Designation": "designation"},
+            {"Material": "material"}
+        ]
+    }
 }

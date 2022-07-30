@@ -32,6 +32,9 @@ gem 'couchrest'
 #simple form
 gem 'simple_form'
 
+gem 'wicked_pdf'
+gem 'aws-sdk-s3'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

@@ -16,6 +16,15 @@
       :reduce: "function(keys,values){return true;}"
     :all_loci:
       :map: "function(doc){if (doc.code) emit(doc.area + '.' + doc.square + '.' + doc.code, doc.area + '.' + doc.square + '.' + doc.code);}"
+    :all_loci_int:
+      :map: >
+        function (doc) {
+          if (doc.code) {
+            var int_code = parseInt(doc.code);
+            emit(doc.area + '.' + doc.square + '.' + int_code, doc.area + '.' + doc.square + '.' + doc.code);
+          }
+        }
+      :reduce: "function(keys,values){return true;}"
     :locus:
       :map: "function(doc){if (doc.code) emit([doc.area, doc.square, doc.code],doc);}"
     :pails:
@@ -125,3 +134,45 @@
             }
           }
         }
+    :bone_report:
+      :map: >
+        function (doc) {
+          if (doc.pails) {
+            for (_pail in doc.pails) {
+              var pail = doc.pails[_pail];
+              if (pail.bone_bag === true) {
+                pail_date = new Date(pail.pail_date);
+                pail_year = pail_date.getFullYear();
+                date_array = pail_date.toDateString().split(' ')
+                month = date_array[1];
+                day = date_array[2];
+                year = date_array[3];
+                emit([pail_year], {"area": doc.area, "square": doc.square, "locus": doc.code, "pail": pail.pail_number, "date": day + " " + month + ", " + year});
+              }
+            }
+          }
+        }
+      :reduce: "function(keys,values){return true;}"
+    :report:
+      :map: >
+        function (doc) {
+          if (doc.pails) {
+            for (var _pail in doc.pails) {
+              var pail = doc.pails[_pail];
+              pail_date = new Date(pail.pail_date);
+              pail_year = pail_date.getFullYear();
+              if (pail.finds) {
+                for (var _find in pail.finds) {
+                  var find = pail.finds[_find];
+                  if (find.registration_number) {
+                    var findType = find.registration_number.charAt(0);
+                    var findHash = {"season": pail_year, "area": doc.area, "square": doc.square, "locus": doc.code, "pail_number": pail.pail_number, "pail_date": pail.pail_date, "doc_id": doc._id}
+                    var mergedHash = Object.assign({}, findHash, find);
+                    emit([pail_year, findType], mergedHash)
+                  }
+                }
+              }
+            }
+          }
+        }
+      :reduce: "function(keys,values){return true;}"

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Khirbat al-Balu'a</h1>
+      <h2>Balu'a Regional Archaeology Project</h2>
+      <h3><%= @season %> <%= @report_type_title %> Report</h3>
+  </div>
+</div>
+<table>
+  <% @rows.each do |row| %>
+    <tr>
+      <td class="report_info">
+        <% @field_set.each do |field_set| %>
+          <div class="field-set">
+            <span class="data-title"><%= field_set.keys.first %></span>
+            <span class="data"><%= row.dig('value',field_set.values.first) %></span>
+          </div>
+        <% end %>
+      </td>
+      <td class="report_image">
+        <%= image_tag(Find.get_presigned_url(row.dig('value','registration_number')), class: 'find-img') %>
+      </td>
+    </tr>
+  <% end %>
+</table>

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :registrar
+  resources :reports, only: [:index, :show]
 
   root to: 'areas#index'
 end

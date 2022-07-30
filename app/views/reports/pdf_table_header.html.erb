@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Khirbat al-Balu'a</h1>
+      <h2>Balu'a Regional Archaeology Project</h2>
+      <h3><%= @season %> <%= @report_type_title %> Report</h3>
+  </div>
+</div>
+<table>
+  <tr>
+    <% @field_set.each do |field_set| %>
+      <th><%= field_set.keys.first %></th>
+    <% end %>
+  </tr>
+  <% @rows.each do |row| %>
+    <tr>
+      <% @field_set.each do |field_set| %>
+        <td><%= row.dig('value',field_set.values.first) %></td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
