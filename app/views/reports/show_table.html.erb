@@ -17,7 +17,7 @@
   <% @rows.each do |row| %>
     <tr>
       <% @field_set.each do |field_set| %>
-        <td><%= row.dig('value',field_set.values.first) %></td>
+        <td><%= row.dig(field_set.values.first) %></td>
       <% end %>
     </tr>
   <% end %>

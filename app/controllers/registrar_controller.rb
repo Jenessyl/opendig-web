@@ -21,6 +21,7 @@ class RegistrarController < ApplicationController
     else
       @finds = Registrar.all_by_season(@selected_season.to_i).select{|reg| reg.state == @status}
     end
+    @finds.sort_by!{|find| [find.locus, find.pail_number, find.field_number]}
   end
 
   def show
@@ -40,7 +41,7 @@ class RegistrarController < ApplicationController
 
     if @doc.save
       flash[:success] = "Success! Find Updated"
-      redirect_to registrar_path(id: @item_id, pail_id: @pail_id, item_number: @item_number, item_locus_code: @item_locus_code)
+      redirect_to registrar_path(id: @item_id, pail_id: pail['pail_number'], item_number: item['field_number'], item_locus_code: @item_locus_code)
     else
       flash.now[:error] = "Something went wrong"
       render :edit

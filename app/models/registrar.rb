@@ -4,7 +4,7 @@ class Registrar
 
   def initialize(row_values)
     @locus, @pail_number, @field_number, @registration_number, @type, @remarks, @state, @id = row_values
-    @state = 'unregistered' if @state.nil?
+    @state = 'unregistered' unless @state.present?
   end
 
   def to_ary

@@ -13,13 +13,13 @@
         <% @field_set.each do |field_set| %>
           <div class="field-set">
             <span class="data-title"><%= field_set.keys.first %></span>
-            <span class="data"><%= row.dig('value',field_set.values.first) %></span>
+            <span class="data"><%= row.dig(field_set.values.first) %></span>
           </div>
         <% end %>
       </td>
       <td class="report_image">
-        <% if Find.can_have_image?(row.dig('value','registration_number')) %>
-          <%= image_tag(Find.get_presigned_url(row.dig('value','registration_number')), class: 'find-img') %>
+        <% if Find.can_have_image?(row.dig('registration_number')) %>
+          <%= image_tag(Find.get_presigned_url(row.dig('registration_number')), class: 'find-img') %>
         <% end %>
       </td>
     </tr>

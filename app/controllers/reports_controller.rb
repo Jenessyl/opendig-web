@@ -17,14 +17,24 @@ class ReportsController < ApplicationController
       when "S"
         @report_type = "samples"
       end
-      @rows = @db.view('opendig/report', {reduce: false, start_key: [@season, report_type_param], end_key:[@season, report_type_param, {}] })["rows"]
+      @rows = CsvData.new(@report_type).rows
+      # @rows = @db.view('opendig/report', {reduce: false, start_key: [@season, report_type_param], end_key:[@season, report_type_param, {}] })["rows"]
     elsif %w( Z ).include? report_type_param
       @report_type = "bones"
-      @rows = @db.view('opendig/bone_report', {reduce: false, start_key: [@season], end_key:[@season, {}] })["rows"]
-      @rows.sort_by!{|row| [row.dig('value', 'area'), row.dig('value', 'square'), row.dig('value', 'locus'), row.dig('value', 'pail')]}
+      # @rows = @db.view('opendig/bone_report', {reduce: false, start_key: [@season], end_key:[@season, {}] })["rows"]
+
+      keys = ["area","square","locus","pail","date"]
+      csv_data = File.read("data/bones.csv")
+      @rows = CSV.parse(csv_data).map {|a| Hash[ keys.zip(a) ] }
+      @rows.map do |r|
+        r['locus'] = sprintf('%03d', r['locus'].to_i)
+        r['pail'] = sprintf('%03d', r['pail'].to_i)
+      end
+
+      @rows.sort_by!{|row| [row.dig('area'), row.dig('square'), row.dig('locus'), row.dig('pail')]}
     end
 
-    @rows.sort_by!{ |row| row.dig('value','registration_number').to_s }
+    @rows.sort_by!{ |row| row.dig('registration_number').to_s }
 
     field_set_selector = @descriptions['reports'][@report_type]['field_set']
     @report_type_title = @descriptions['reports'][@report_type]['title']

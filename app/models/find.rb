@@ -16,6 +16,7 @@ class Find
   end
 
   def self.can_have_image?(registration_number)
+    return unless registration_number.present?
     return false if registration_number.upcase.start_with?("S")
     true
   end
