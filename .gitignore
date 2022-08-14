@@ -38,3 +38,15 @@
 infrastructure/app/**/couchdb.yml
 
 .byebug_history
+
+# ignore docker compose dirs
+prometheus-data/
+couchdb-data/
+minio-data/
+shared-data/
+grafana-data/
+
+# ignore terraform extras
+*.tfstate
+*.lock.hcl
+.terraform/
