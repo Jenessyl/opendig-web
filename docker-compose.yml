@@ -1,18 +1,25 @@
 services:
   app:
-    image: opendig/web:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     stdin_open: true
     tty: true
     environment:
       RAILS_ENV: development
       EDITING_ENABLED: true
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+      S3_BUCKET_NAME: 'balua-2022'
+      S3_URL: 'http://minio:9000'
     ports:
       - "3000:3000"
     volumes:
       - .:/app
-    user: 501:20
+    # user: 501:20
     depends_on:
       - db
+      - minio
     command: "/app/bin/dev"
 
   db:
@@ -20,8 +27,62 @@ services:
     environment:
       COUCHDB_USER: admin
       COUCHDB_PASSWORD: password
-    user: 501:20
     ports:
       - 6984:5984
     volumes:
       - ./couchdb-data:/opt/couchdb/data
+
+  couchbase:
+    image: couchbase:community
+    environment:
+      CB_USER: admin
+      CB_PASSWORD: password
+    ports:
+      - 8091-8097:8091-8097
+      - 11210:11210
+      - 11207:11207
+      - 18091-18097:18091-18097
+      -
+    volumes:
+      - ./couchbase-data:/opt/couchbase/var
+
+  minio:
+    image: minio/minio:latest
+    command: server --console-address ":9001" /data
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+    ports:
+      - 9000:9000
+      - 9001:9001
+    volumes:
+      - ./minio-data:/data
+
+  prometheus:
+    image: prom/prometheus:v2.37.0
+    ports:
+      - 9090:9090
+    volumes:
+      - ./prometheus-data:/etc/prometheus
+    depends_on:
+      - db
+      - minio
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 4000:3000
+    volumes:
+      - ./grafana-data:/var/lib/grafana
+    # user: 501:20
+    depends_on:
+      - prometheus
+
+  node_exporter:
+    image: prom/node-exporter:latest
+    command:
+      - '--collector.textfile.directory=/var/lib/textfile_collector'
+    ports:
+      - 9100:9100
+    volumes:
+      - ./shared-data/textfile_collector:/var/lib/textfile_collector
