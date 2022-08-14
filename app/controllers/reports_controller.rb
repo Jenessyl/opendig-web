@@ -19,7 +19,7 @@ class ReportsController < ApplicationController
       end
       @rows = CsvData.new(@report_type).rows
       # @rows = @db.view('opendig/report', {reduce: false, start_key: [@season, report_type_param], end_key:[@season, report_type_param, {}] })["rows"]
-      @rows.sort_by!{ |row| row.dig('registration_number').to_s }
+      @rows.select!{|row| row.dig('allocation')&.upcase.include?('DoA'.upcase)}.sort_by!{ |row| row.dig('registration_number').to_s }
     elsif %w( Z ).include? report_type_param
       @report_type = "bones"
       # @rows = @db.view('opendig/bone_report', {reduce: false, start_key: [@season], end_key:[@season, {}] })["rows"]

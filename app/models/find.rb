@@ -21,6 +21,14 @@ class Find
     true
   end
 
+  def self.check_image(registration_number)
+    Rails.cache.fetch("#{registration_number}_image", expires_in: 1.day) do
+      bucket = Rails.application.config.s3_bucket
+      object_key = "#{registration_number}.jpg"
+      bucket.object(object_key).exists?
+    end
+  end
+
   def self.get_presigned_url(registration_number)
     unless Find.can_have_image?(registration_number)
       url = 'https://via.placeholder.com/250x250.png?text=No+Image'
