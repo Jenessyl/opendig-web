@@ -21,4 +21,4 @@ if [ -f "./tmp/pids/server.pid" ]; then
 fi
 
 bin/rails assets:precompile
-bin/rails server -b 0.0.0.0
+rdbg --port 3001 --host 0.0.0.0 -n -O -c -- bin/rails server -b 0.0.0.0
