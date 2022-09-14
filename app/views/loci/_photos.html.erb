@@ -7,6 +7,7 @@
           <th>Date</th>
           <th>Photo Number</th>
           <th>Subject</th>
+          <th>Photo</th>
         </tr>
       </thead>
       <tbody>
@@ -15,6 +16,9 @@
             <td><%= read_date photo["date"] %></td>
             <td><%= photo["number"] %></td>
             <td><%= photo["subject"] %></td>
+            <td>
+              <a class="locus-photo-link" href="<%= Photo.photo_url(photo["number"], :medium) %>" data-lightbox="locus-photos"><img class="locus-photo" src="<%= Photo.photo_url(photo["number"], :thumb) %>" alt=""/></a>
+            </td>
           </tr>
         <% end %>
       </tbody>

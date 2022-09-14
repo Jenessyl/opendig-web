@@ -126,5 +126,4 @@ module ApplicationHelper
       text_area_tag "#{full_param_name}", value, class: "form-control"
     end
   end
-
 end

@@ -1,3 +1,7 @@
+require 'aws-sdk-core'
+require 'aws-sdk-s3'
+require 'imgproxy'
+
 if ENV['S3_URL']
   Aws.config.update(
     endpoint: ENV['S3_URL'],
@@ -13,3 +17,9 @@ s3 = Aws::S3::Resource.new
 
 bucket_name = ENV['S3_BUCKET_NAME'] || "opendig_#{Rails.env}"
 Rails.application.config.s3_bucket = s3.bucket(bucket_name)
+
+Imgproxy.configure do |config|
+  config.endpoint = ENV['IMGPROXY_URL']
+end
+
+placerholder = ENV['PLACEHOLDER_URL'] || "https://placehold.jp/1000x1000.jpg?text=No+Image"

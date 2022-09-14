@@ -34,6 +34,10 @@
 # Ignore master key for decrypting credentials and more.
 /config/master.key
 
+# Ignore secrets in overlay files
+/infrastructure/app/overlays/**/couchdb.yml
+/infrastructure/app/overlays/**/master.key
+/infrastructure/app/overlays/**/opendig.production.secrets.env
 
 .byebug_history
 
@@ -48,3 +52,5 @@ grafana-data/
 *.tfstate
 *.lock.hcl
 .terraform/
+
+.envrc

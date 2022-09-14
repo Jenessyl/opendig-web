@@ -7,21 +7,27 @@ services:
     tty: true
     environment:
       RAILS_ENV: development
-      EDITING_ENABLED: true
+      EDITING_ENABLED: false
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      S3_BUCKET_NAME: 'balua-2022'
+      S3_BUCKET_NAME: ${S3_BUCKET}
       S3_URL: 'http://minio:9000'
+      IMGPROXY_KEY: ${IMGPROXY_KEY}
+      IMGPROXY_SALT: ${IMGPROXY_SALT}
+      IMGPROXY_URL: ${IMGPROXY_URL}
     ports:
-      - "3000:3000"
+      - 3000:3000
+      - 3001:3001
     volumes:
       - .:/app
     # user: 501:20
     depends_on:
       - db
       - minio
+      - imgproxy
+      - redis
     command: "/app/bin/dev"
-
+    platform: linux/amd64
   db:
     image: couchdb:latest
     environment:
@@ -31,20 +37,6 @@ services:
       - 6984:5984
     volumes:
       - ./couchdb-data:/opt/couchdb/data
-
-  couchbase:
-    image: couchbase:community
-    environment:
-      CB_USER: admin
-      CB_PASSWORD: password
-    ports:
-      - 8091-8097:8091-8097
-      - 11210:11210
-      - 11207:11207
-      - 18091-18097:18091-18097
-      -
-    volumes:
-      - ./couchbase-data:/opt/couchbase/var
 
   minio:
     image: minio/minio:latest
@@ -58,31 +50,48 @@ services:
     volumes:
       - ./minio-data:/data
 
-  prometheus:
-    image: prom/prometheus:v2.37.0
+  imgproxy:
+    image: darthsim/imgproxy:latest
     ports:
-      - 9090:9090
-    volumes:
-      - ./prometheus-data:/etc/prometheus
-    depends_on:
-      - db
-      - minio
+      - 8080:8080
+    environment:
+      IMGPROXY_USE_S3: true
+      IMGPROXY_S3_ENDPOINT: http://minio:9000
+      IMGPROXY_KEY: ${IMGPROXY_KEY}
+      IMGPROXY_SALT: ${IMGPROXY_SALT}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
 
-  grafana:
-    image: grafana/grafana:latest
+  redis:
+    image: redis:latest
     ports:
-      - 4000:3000
-    volumes:
-      - ./grafana-data:/var/lib/grafana
-    # user: 501:20
-    depends_on:
-      - prometheus
+      - 6379:6379
 
-  node_exporter:
-    image: prom/node-exporter:latest
-    command:
-      - '--collector.textfile.directory=/var/lib/textfile_collector'
-    ports:
-      - 9100:9100
-    volumes:
-      - ./shared-data/textfile_collector:/var/lib/textfile_collector
+  # prometheus:
+  #   image: prom/prometheus:v2.37.0
+  #   ports:
+  #     - 9090:9090
+  #   volumes:
+  #     - ./prometheus-data:/etc/prometheus
+  #   depends_on:
+  #     - db
+  #     - minio
+
+  # grafana:
+  #   image: grafana/grafana:latest
+  #   ports:
+  #     - 4000:3000
+  #   volumes:
+  #     - ./grafana-data:/var/lib/grafana
+  #   # user: 501:20
+  #   depends_on:
+  #     - prometheus
+
+  # node_exporter:
+  #   image: prom/node-exporter:latest
+  #   command:
+  #     - '--collector.textfile.directory=/var/lib/textfile_collector'
+  #   ports:
+  #     - 9100:9100
+  #   volumes:
+  #     - ./shared-data/textfile_collector:/var/lib/textfile_collector

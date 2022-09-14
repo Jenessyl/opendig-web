@@ -27,6 +27,16 @@
       :reduce: "function(keys,values){return true;}"
     :locus:
       :map: "function(doc){if (doc.code) emit([doc.area, doc.square, doc.code],doc);}"
+    :photos:
+      :map: >
+        function (doc) {
+          if (doc.photos) {
+            for (var _photo in doc.photos) {
+              var photo = doc.photos[_photo];
+              emit(photo.number, [doc.area + '.' + doc.square + '.' + doc.code, photo.number, photo.subject, photo.date])
+            }
+          }
+        }
     :pails:
       :map: >
         function (doc) {
