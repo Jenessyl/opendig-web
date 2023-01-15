@@ -1,0 +1,5 @@
+prometheus-data/
+couchdb-data/
+minio-data/
+shared-data/
+grafana-data/

@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "3.2.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 7.0.3"
+gem "rails", "~> 7.0.4"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -33,7 +33,6 @@ gem 'couchrest'
 gem 'simple_form'
 
 gem 'wicked_pdf'
-gem 'aws-sdk-s3'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -83,4 +82,5 @@ group :test do
   gem "webdrivers"
   gem 'rspec-rails'
   gem "buildkite-test_collector"
+  gem "rails-controller-testing"
 end

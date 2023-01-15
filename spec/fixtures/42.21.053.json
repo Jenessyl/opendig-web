@@ -1,0 +1,574 @@
+{
+  "code": "053",
+  "supervisor": "J Bennett",
+  "square": "21",
+  "end_date": "2022-07-18",
+  "locus_type": "Earth",
+  "designation": "New after 52 in the north section ",
+  "top_separation": "Clear",
+  "clean_locus": null,
+  "area": "42",
+  "start_date": "2022-07-17",
+  "bottom_separation": "Average",
+  "pails": [{
+    "baskets": 48,
+    "finds": [],
+    "pail_date": "2022-07-18",
+    "diagnostic_count": 5,
+    "pail_number": "153",
+    "pottery_comments": "New locus after 52 N. seztion.",
+    "publish": 5,
+    "total_count": 94,
+    "readings": [{
+      "age": "Iron 1",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 1",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 63,
+    "baskets": 15,
+    "finds": [{
+      "gis_id": ".1212",
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "071",
+      "remarks": "Mortar - Residue Analysis",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Stone"
+    }, {
+      "gis_id": null,
+      "origin": "From Sift",
+      "condition": "Fragile",
+      "field_number": "072",
+      "remarks": "Nail",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Metal"
+    }, {
+      "gis_id": null,
+      "origin": "From Sift",
+      "condition": "Fragile",
+      "field_number": "073",
+      "remarks": "Metal Jewelry",
+      "migrated_type": "Artifact",
+      "date": "2023-07-18",
+      "type": "Metal"
+    }],
+    "pail_date": "2022-07-18",
+    "bone_bag": true,
+    "diagnostic_count": 10,
+    "pail_number": "156",
+    "pottery_comments": "N. section.",
+    "publish": 5,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "071",
+      "remarks": "Mortar - Residue Analysis",
+      "origin": "From Locus",
+      "date": "2022-07-18"
+    }, {
+      "type": "Metal",
+      "condition": "Fragile",
+      "field_number": "072",
+      "remarks": "Nail",
+      "origin": "From Sift",
+      "date": "2022-07-18"
+    }, {
+      "type": "Metal",
+      "condition": "Fragile",
+      "field_number": "074",
+      "remarks": "Metal Jewelry",
+      "origin": "From Sift",
+      "date": "2023-07-18"
+    }],
+    "readings": [{
+      "age": "Iron 2B-C",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 48,
+    "bone_bag": true,
+    "pail_date": "2022-07-17",
+    "samples": [{
+      "sample_gis_id": "0000",
+      "sample_number": "057",
+      "sample_remarks": "Seed",
+      "sample_type": "Other",
+      "date": "2018-07-17"
+    }, {
+      "sample_gis_id": "0000",
+      "sample_number": "061",
+      "sample_remarks": "Phytolith Sample",
+      "sample_type": "Soil",
+      "date": "2022-07-18"
+    }, {
+      "sample_gis_id": "0000",
+      "sample_number": "062",
+      "sample_remarks": "Phytolith Sample",
+      "sample_type": "Soil",
+      "date": "2022-07-18"
+    }, {
+      "sample_gis_id": "0000",
+      "sample_number": "065",
+      "sample_remarks": "Phytolith Sample",
+      "sample_type": "Soil",
+      "date": "2022-07-18"
+    }, {
+      "sample_gis_id": "0000",
+      "sample_number": "070",
+      "sample_remarks": "Phytolith Sample",
+      "sample_type": "Soil",
+      "date": "2022-07-18"
+    }],
+    "pail_number": "154",
+    "pottery_comments": "New Locus after 5'2 North section.",
+    "readings": [{
+      "age": "Iron 1",
+      "pot_form": "Bowl",
+      "time_level": "",
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 1",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }],
+    "artifacts": [{
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "058",
+      "remarks": "Loom Weight",
+      "origin": "From Locus",
+      "date": "2022-07-17"
+    }, {
+      "type": "Other",
+      "condition": "Fragile",
+      "field_number": "060",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-18"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "063",
+      "remarks": "Worked Stone",
+      "origin": "From Sift",
+      "date": "2022-07-18"
+    }, {
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "064",
+      "remarks": "Loom Weight",
+      "origin": "From Locus",
+      "date": "2022-07-18"
+    }, {
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "066",
+      "remarks": "Loom Weight ",
+      "origin": "From Locus",
+      "date": "2022-07-18"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "067",
+      "remarks": "Pestle",
+      "origin": "From Locus",
+      "date": "2022-07-18"
+    }, {
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "068",
+      "remarks": "Loom Weight",
+      "origin": "From Locus",
+      "date": "2022-07-18"
+    }, {
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "069",
+      "remarks": "Loom Weight",
+      "origin": "From Locus",
+      "date": "2022-07-23"
+    }],
+    "finds": [{
+      "gis_id": "0000",
+      "origin": "From Locus",
+      "condition": "Fragile",
+      "field_number": "058",
+      "remarks": "Loom Weight",
+      "migrated_type": "Artifact",
+      "date": "2022-07-17",
+      "type": "Ceramic"
+    }, {
+      "gis_id": null,
+      "origin": "From Sift",
+      "condition": "Fragile",
+      "field_number": "060",
+      "remarks": "Worked Something ",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Other"
+    }, {
+      "gis_id": null,
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "063",
+      "remarks": "Worked Stone",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Stone"
+    }, {
+      "gis_id": ".1201",
+      "origin": "From Locus",
+      "condition": "Fragile",
+      "field_number": "064",
+      "remarks": "Loom Weight",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Ceramic"
+    }, {
+      "gis_id": ".1203",
+      "origin": "From Locus",
+      "condition": "Fragile",
+      "field_number": "066",
+      "remarks": "Loom Weight ",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Ceramic"
+    }, {
+      "gis_id": ".1204",
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "067",
+      "remarks": "Pestle",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Stone"
+    }, {
+      "gis_id": ".1205",
+      "origin": "From Locus",
+      "condition": "Fragile",
+      "field_number": "068",
+      "remarks": "Loom Weight",
+      "migrated_type": "Artifact",
+      "date": "2022-07-18",
+      "type": "Ceramic"
+    }, {
+      "gis_id": ".1206",
+      "origin": "From Locus",
+      "condition": "Fragile",
+      "field_number": "069",
+      "remarks": "Loom Weight",
+      "migrated_type": "Artifact",
+      "date": "2022-07-23",
+      "type": "Ceramic"
+    }, {
+      "gis_id": "0000",
+      "origin": null,
+      "condition": null,
+      "field_number": "057",
+      "remarks": "charcoal Seed",
+      "migrated_type": "Sample",
+      "date": "2018-07-17",
+      "type": "Other"
+    }, {
+      "length_height": "",
+      "designation": "phytoliths in soil",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Soil",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220125",
+      "diameter": "",
+      "percent": "",
+      "remarks": "Phytolith Sample",
+      "shape": "",
+      "date": "2022-07-18",
+      "field_number": "061",
+      "origin": "From Locus",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Sample",
+      "stratum": "",
+      "preservation": "",
+      "gis_id": "0000",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "phytoliths in soil",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Soil",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220124",
+      "diameter": "",
+      "percent": "",
+      "remarks": "Phytolith Sample",
+      "shape": "",
+      "date": "2022-07-18",
+      "field_number": "062",
+      "origin": "From Locus",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Sample",
+      "stratum": "",
+      "preservation": "",
+      "gis_id": "0000",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "Phytoliths to Jeff",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Soil",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220134",
+      "diameter": "",
+      "percent": "",
+      "remarks": "Phytolith Sample",
+      "shape": "",
+      "date": "2022-07-18",
+      "field_number": "065",
+      "origin": "From Locus",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Sample",
+      "stratum": "",
+      "preservation": "",
+      "gis_id": ".1202",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "phytoliths to Betty",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Soil",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220135",
+      "diameter": "",
+      "percent": "",
+      "remarks": "Phytolith Sample",
+      "shape": "",
+      "date": "2022-07-18",
+      "field_number": "070",
+      "origin": "From Locus",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Sample",
+      "stratum": "",
+      "preservation": "",
+      "gis_id": ".1206",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "diagnostic_count": 5,
+    "total_count": 94,
+    "publish": 5
+  }],
+  "levels": [{
+    "method_top": "GPS",
+    "top_level": "0000",
+    "gis_id_top": "0000"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.172",
+    "gis_id_top": ".1160"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.156",
+    "gis_id_top": ".1161"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.101",
+    "gis_id_top": ".1162"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.049",
+    "gis_id_top": ".1163"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.185",
+    "gis_id_top": ".1164"
+  }, {
+    "method_top": "GPS",
+    "top_level": "837.908",
+    "gis_id_top": ".1201"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.078",
+    "gis_id_top": ".1202"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.173",
+    "gis_id_top": ".1203"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.114",
+    "gis_id_top": ".1204"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.306",
+    "gis_id_top": ".1205"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.238",
+    "gis_id_top": ".1206"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.186",
+    "gis_id_top": ".1207"
+  }, {
+    "method_top": "GPS",
+    "top_level": "838.144",
+    "gis_id_top": ".1212"
+  }],
+  "reason": "We excavated 10 cm after surface 51",
+  "balk": null,
+  "photos": [{
+    "date": "2022-07-18",
+    "number": "0258",
+    "subject": "Progress "
+  }],
+  "earth_description": {
+    "remarks": null,
+    "shape_as": "35",
+    "olive": null,
+    "nari_size": null,
+    "brick_frequency": null,
+    "unidentifiable_number": null,
+    "wetness_description": "Dry",
+    "lower_depth": ".207",
+    "compactness_degree_2": "Very",
+    "stone_distribution": "Random",
+    "glass": null,
+    "tesserae": null,
+    "flint": null,
+    "shape_sr": "15",
+    "pebbles": "100",
+    "cobbles": "50",
+    "organic_distribution": null,
+    "shape_a": "45",
+    "architectural_fragments_count": null,
+    "munsel": "5YR 7/3",
+    "upper_depth": ".076",
+    "length": null,
+    "hardness": "Loose",
+    "ash_size": null,
+    "direction": null,
+    "worked_stone": null,
+    "lam_number": null,
+    "surface_material": null,
+    "unfired_clay": null,
+    "burned_stone": null,
+    "bones": "Very Frequent",
+    "artifact_distribution": null,
+    "slope": null,
+    "brick_fragments": "15",
+    "shape_r": "5",
+    "texture": "Sandy Loam",
+    "unidentifiable_size": null,
+    "nari_frequency": null,
+    "ash_frequency": null,
+    "tabun_fragments": "15",
+    "compactness_degree_1": "Very",
+    "roof_tiles": null,
+    "pebble_size": null,
+    "burnt_wood_count": null,
+    "brick_size": null,
+    "boulders": "5",
+    "compactness_description_1": "Loose",
+    "earth_distribution": null,
+    "burn_wood_size": null,
+    "pottery": "Very Frequent",
+    "structure": null,
+    "width": null,
+    "pebble_frequency": null,
+    "wetness_degree": null,
+    "compactness_description_2": "Loose"
+  }
+}

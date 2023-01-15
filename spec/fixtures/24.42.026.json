@@ -1,0 +1,2201 @@
+{
+  "earth_description": {
+    "remarks": "Reopened in 2022, extending to the north. Loci 28 and 30 underneath were merged with 26 because they are all tumble.",
+    "shape_as": "30",
+    "olive": "",
+    "nari_size": "",
+    "brick_frequency": "",
+    "unidentifiable_number": "",
+    "wetness_description": "Dry",
+    "lower_depth": "0.07",
+    "compactness_degree_2": "Moderately",
+    "stone_distribution": "Random",
+    "glass": "",
+    "tesserae": "",
+    "flint": "",
+    "shape_sr": "30",
+    "pebbles": ">100",
+    "cobbles": "<60",
+    "organic_distribution": "",
+    "shape_a": "20",
+    "architectural_fragments_count": "",
+    "munsel": "10YR 6/3",
+    "upper_depth": "0.02",
+    "length": "6.8m",
+    "hardness": "Somewhat Loose",
+    "ash_size": "",
+    "direction": "12",
+    "worked_stone": "",
+    "lam_number": "",
+    "surface_material": "",
+    "unfired_clay": "",
+    "burned_stone": "",
+    "bones": "",
+    "artifact_distribution": "",
+    "slope": "6",
+    "brick_fragments": "",
+    "shape_r": "20",
+    "texture": "Clay",
+    "unidentifiable_size": "",
+    "nari_frequency": "",
+    "ash_frequency": "",
+    "tabun_fragments": "",
+    "compactness_degree_1": "Moderately",
+    "roof_tiles": "",
+    "pebble_size": "",
+    "burnt_wood_count": "",
+    "brick_size": "",
+    "boulders": "1",
+    "compactness_description_1": "Loose",
+    "earth_distribution": "",
+    "burn_wood_size": "",
+    "pottery": "",
+    "structure": "Random",
+    "width": "4.26m",
+    "pebble_frequency": "",
+    "wetness_degree": "Moderately",
+    "compactness_description_2": "Loose"
+  },
+  "code": "026",
+  "supervisor": "K. Burrell, C. Tyson; M. Apffel",
+  "square": "42",
+  "end_date": "2022-07-10",
+  "field": "24",
+  "locus_type": "Earth",
+  "stratigraphies": [{
+    "related": "Earth layer",
+    "is_related": "Under",
+    "related_locus": "24.42.025"
+  }, {
+    "related": "Earth layer",
+    "is_related": "Over",
+    "related_locus": "24.42.028"
+  }, {
+    "related": "Wall",
+    "is_related": "Seals against",
+    "related_locus": "24.42.006"
+  }, {
+    "related": "Wall",
+    "is_related": "Seals against",
+    "related_locus": "24.42.033"
+  }],
+  "function": "",
+  "designation": "Rocky “tumble” beneath loci 2 & 4\n2022: merged this with the two loci underneath, loci 28 and 30.",
+  "top_separation": "Clear",
+  "clean_locus": null,
+  "stratigraphy_remarks": "",
+  "area": "24",
+  "bottom_separation": "Average",
+  "balk": null,
+  "levels": [{
+    "gis_id_top": "B19.0106",
+    "method_top": "GPS",
+    "top_level": 845.17,
+    "bottom_level": 845.15,
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B19.0113"
+  }, {
+    "gis_id_top": "B19.0107",
+    "method_top": "GPS",
+    "top_level": 845.15,
+    "bottom_level": 845.08,
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B19.0112"
+  }, {
+    "gis_id_top": "B22.0382",
+    "method_top": "GPS",
+    "top_level": "845.26",
+    "bottom_level": "845.09",
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B22.0605"
+  }, {
+    "gis_id_top": "B22.0383",
+    "method_top": "GPS",
+    "top_level": "845.29",
+    "bottom_level": "845.16",
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B22.0604"
+  }, {
+    "gis_id_top": "B22.0384",
+    "method_top": "GPS",
+    "top_level": "845.27",
+    "bottom_level": "845.01",
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B22.0603"
+  }, {
+    "gis_id_top": "B22.0385",
+    "method_top": "GPS",
+    "top_level": "845.28",
+    "bottom_level": "844.86",
+    "method_bottom": "GPS",
+    "gis_id_bottom": "B22.0652"
+  }, {
+    "method_top": "GPS",
+    "top_level": "845.18",
+    "gis_id_top": "B22.0386"
+  }, {
+    "method_top": "GPS",
+    "top_level": "844.69",
+    "gis_id_top": "B22.0857"
+  }],
+  "pails": [{
+    "baskets": 16,
+    "finds": [],
+    "pail_date": "2019-06-28",
+    "diagnostic_count": 1,
+    "pail_number": "045",
+    "pottery_comments": "7 bones or bone fragments in this pail.",
+    "publish": 1,
+    "total_count": 29,
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 216,
+    "baskets": 61,
+    "finds": [{
+      "length_height": "1.11",
+      "designation": "UD",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "0.66",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "glass",
+      "certainty": "",
+      "pieces": "broken",
+      "type": "Other",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "UD",
+      "registration_number": "A220102",
+      "diameter": "0.64",
+      "percent": "frag",
+      "remarks": "Glass?",
+      "shape": "cylindricalnearly",
+      "date": "2022-07-03",
+      "field_number": "020",
+      "origin": "From Sift",
+      "color": "\"Gley 2 3-10BG",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": " 10R 4-6\"",
+      "allocation": "1",
+      "notes": "",
+      "weight": "",
+      "width": "1.56",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "ceramic tech",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220011",
+      "diameter": "",
+      "percent": "",
+      "remarks": "Pot mend",
+      "shape": "",
+      "date": "2022-07-03",
+      "field_number": "030",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "3.12",
+      "designation": "jar stopper",
+      "registars_condition": "whole",
+      "state": "initial registration",
+      "thickness": "1.11",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "ceramic",
+      "certainty": "possible",
+      "pieces": "1",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "nearly",
+      "condition": null,
+      "craftsmanship": "crude",
+      "registration_number": "A220114",
+      "diameter": "3.12",
+      "percent": "100%",
+      "remarks": null,
+      "shape": "circular",
+      "date": "2022-07-03",
+      "field_number": "031",
+      "origin": "From Sift",
+      "color": "7.5YR 7-4",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "comp",
+      "allocation": "",
+      "notes": "",
+      "weight": "10.61",
+      "width": "2.74",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-03",
+    "bone_bag": true,
+    "diagnostic_count": 49,
+    "pail_number": "143",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Other",
+      "condition": null,
+      "field_number": "020",
+      "remarks": "Glass?",
+      "origin": "From Sift",
+      "date": "2022-07-03"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "030",
+      "remarks": "Pot mend",
+      "origin": "From Sift",
+      "date": "2022-07-03"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "031",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-03"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 10,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 5,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Lamp",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 173,
+    "baskets": 65,
+    "finds": [{
+      "length_height": "10.37",
+      "designation": "whetstone",
+      "registars_condition": "whole",
+      "state": "initial registration",
+      "thickness": "2.65",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "stone",
+      "certainty": "certain",
+      "pieces": "",
+      "type": "Stone",
+      "period": "",
+      "shape_modifier": "rounded",
+      "condition": null,
+      "craftsmanship": "mod",
+      "registration_number": "A220093",
+      "diameter": "",
+      "percent": "100%",
+      "remarks": null,
+      "shape": "triangular",
+      "date": "2022-07-04",
+      "field_number": "022",
+      "origin": "From Locus",
+      "color": "5YR/5-2",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "whole",
+      "allocation": "",
+      "notes": "",
+      "weight": "233.00",
+      "width": "5.41",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "rock",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Stone",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220053",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-04",
+      "field_number": "024",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-04",
+    "diagnostic_count": 35,
+    "pail_number": "145",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "022",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-04"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "024",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-04"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 12,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": null,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Lamp",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Painted Body",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 202,
+    "baskets": 65,
+    "finds": [{
+      "length_height": "5.70",
+      "designation": "jar stopper",
+      "registars_condition": "whole",
+      "state": "initial registration",
+      "thickness": "1.79",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "ceramic",
+      "certainty": "probable",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "nearly",
+      "condition": null,
+      "craftsmanship": "crude",
+      "registration_number": "A220126",
+      "diameter": "",
+      "percent": "100%",
+      "remarks": null,
+      "shape": "circular",
+      "date": "2022-07-04",
+      "field_number": "047",
+      "origin": "From Sift",
+      "color": "7.5YR/7-2",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "comp",
+      "allocation": "",
+      "notes": "",
+      "weight": "66.20",
+      "width": "5.71",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "jar stopper",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220066",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-04",
+      "field_number": "048",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "jar stopper",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220068",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-04",
+      "field_number": "049",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-04",
+    "bone_bag": true,
+    "diagnostic_count": 42,
+    "pail_number": "150",
+    "pottery_comments": null,
+    "publish": 10,
+    "artifacts": [{
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "047",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-04"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "048",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-04"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "049",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-04"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 128,
+    "baskets": 38,
+    "finds": [{
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "026",
+      "remarks": "Attic ware?",
+      "migrated_type": "Artifact",
+      "date": "2022-07-04",
+      "type": "Ceramic"
+    }],
+    "pail_date": "2022-07-04",
+    "diagnostic_count": 24,
+    "pail_number": "147",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "026",
+      "remarks": "Attic ware?",
+      "origin": "From Sift",
+      "date": "2022-07-04"
+    }],
+    "readings": [{
+      "age": "Early Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 24,
+    "bone_bag": true,
+    "pail_date": "2022-07-05",
+    "samples": [{
+      "sample_gis_id": "B22.0529",
+      "sample_number": "037",
+      "sample_remarks": "Level 845.06",
+      "sample_type": "Soil",
+      "date": "2022-07-05"
+    }],
+    "pail_number": "151",
+    "pottery_comments": null,
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }],
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "038",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-05"
+    }],
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "038",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-05",
+      "type": "Stone"
+    }, {
+      "gis_id": "B22.0529",
+      "condition": null,
+      "field_number": "037",
+      "remarks": "Level 845.06",
+      "migrated_type": "Sample",
+      "date": "2022-07-05",
+      "type": "Soil"
+    }],
+    "diagnostic_count": 4,
+    "total_count": 125,
+    "publish": 0
+  }, {
+    "baskets": 6,
+    "finds": [],
+    "pail_date": "2022-07-05",
+    "bone_bag": true,
+    "diagnostic_count": 22,
+    "pail_number": "154",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 102,
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 6,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 119,
+    "baskets": 53,
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "042",
+      "remarks": "GPS ID B22.0586",
+      "migrated_type": "Artifact",
+      "date": "2022-07-05",
+      "type": "Stone"
+    }, {
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "043",
+      "remarks": "Glass bangle?",
+      "migrated_type": "Artifact",
+      "date": "2022-07-05",
+      "type": "Other"
+    }, {
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "044",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-05",
+      "type": "Stone"
+    }, {
+      "length_height": "4.43",
+      "designation": "inscription on bowl fragment",
+      "registars_condition": "broken",
+      "state": "initial registration",
+      "thickness": "0.78",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "ceramic",
+      "certainty": "",
+      "pieces": "1",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "nearly",
+      "condition": null,
+      "craftsmanship": "mod",
+      "registration_number": "B220004",
+      "diameter": "",
+      "percent": "UD",
+      "remarks": "Inscription on potsherd",
+      "shape": "rectangular",
+      "date": "2022-07-05",
+      "field_number": "056",
+      "origin": "From Sift",
+      "color": "7.5YR/8-3",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "frag",
+      "allocation": "",
+      "notes": "",
+      "weight": "14.12",
+      "width": "3.55",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-05",
+    "bone_bag": true,
+    "diagnostic_count": 35,
+    "pail_number": "155",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "042",
+      "remarks": "GPS ID B22.0586",
+      "origin": "From Locus",
+      "date": "2022-07-05"
+    }, {
+      "type": "Other",
+      "condition": null,
+      "field_number": "043",
+      "remarks": "Glass bangle?",
+      "origin": "From Sift",
+      "date": "2022-07-05"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "044",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-05"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "056",
+      "remarks": "Inscription on potsherd",
+      "origin": "From Sift",
+      "date": "2022-07-05"
+    }],
+    "readings": [{
+      "age": "Iron 2A",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2A",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2A",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 5,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Hellenistic",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 102,
+    "baskets": 54,
+    "finds": [{
+      "length_height": "",
+      "designation": "metal",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Metal",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220048",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-05",
+      "field_number": "057",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-05",
+    "diagnostic_count": 9,
+    "pail_number": "156",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Metal",
+      "condition": null,
+      "field_number": "057",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-05"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 6,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 137,
+    "baskets": 54,
+    "finds": [{
+      "length_height": "",
+      "designation": "jar stopper",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220065",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-06",
+      "field_number": "050",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "051",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-06",
+      "type": "Stone"
+    }],
+    "pail_date": "2022-07-06",
+    "bone_bag": true,
+    "diagnostic_count": 17,
+    "pail_number": "157",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "050",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-06"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "051",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-06"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 6,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Body",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 38,
+    "finds": [],
+    "pail_date": "2022-07-06",
+    "bone_bag": true,
+    "diagnostic_count": 20,
+    "pail_number": "160",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 145,
+    "readings": [{
+      "age": "Late Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Jar/Jug",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": null,
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 43,
+    "finds": [],
+    "pail_date": "2022-07-06",
+    "bone_bag": true,
+    "diagnostic_count": 14,
+    "pail_number": "161",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 111,
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 28,
+    "bone_bag": true,
+    "pail_date": "2022-07-06",
+    "samples": [{
+      "sample_gis_id": "B22.0652",
+      "sample_number": "053",
+      "sample_remarks": "Soil underneath quern 52.",
+      "sample_type": "Soil",
+      "date": "2022-07-06"
+    }],
+    "pail_number": "162",
+    "pottery_comments": null,
+    "readings": [{
+      "age": "Iron 1",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 6,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 5,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Lamp",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }],
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "052",
+      "remarks": "Large quern that will remain on-site. A soil sample (#52) was taken from underneath it once it was turned upright.\n\nGPS ID: B22.0652",
+      "origin": "From Locus",
+      "date": "2022-07-06"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "054",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-06"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "055",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-06"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "064",
+      "remarks": "Corner of basalt vessel?",
+      "origin": "From Sift",
+      "date": "2022-07-06"
+    }],
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "052",
+      "remarks": "Large quern that will remain on-site. A soil sample (#52) was taken from underneath it once it was turned upright.\n\nGPS ID: B22.0652",
+      "migrated_type": "Artifact",
+      "date": "2022-07-06",
+      "type": "Stone"
+    }, {
+      "length_height": "",
+      "designation": "jar stopper",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220046",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-06",
+      "field_number": "054",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "length_height": "",
+      "designation": "hand grinder",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220089",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-06",
+      "field_number": "055",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }, {
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "064",
+      "remarks": "Corner of basalt vessel?",
+      "migrated_type": "Artifact",
+      "date": "2022-07-06",
+      "type": "Stone"
+    }, {
+      "gis_id": "B22.0652",
+      "condition": null,
+      "field_number": "053",
+      "remarks": "Soil underneath quern 52.",
+      "migrated_type": "Sample",
+      "date": "2022-07-06",
+      "type": "Soil"
+    }],
+    "diagnostic_count": 33,
+    "total_count": 117,
+    "publish": 0
+  }, {
+    "total_count": 61,
+    "baskets": 22,
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "059",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-07",
+      "type": "Stone"
+    }, {
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "060",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-07",
+      "type": "Stone"
+    }],
+    "pail_date": "2022-07-07",
+    "bone_bag": true,
+    "diagnostic_count": 11,
+    "pail_number": "165",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "059",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-07"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "060",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-07"
+    }],
+    "readings": [{
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Basin",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Painted Body",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 139,
+    "baskets": 32,
+    "finds": [{
+      "length_height": "5.02",
+      "designation": "hand grinder",
+      "registars_condition": "broken",
+      "state": "initial registration",
+      "thickness": "3.87",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "stone (basalt?)",
+      "certainty": "probable",
+      "pieces": "1",
+      "type": "Stone",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "A220118",
+      "diameter": "",
+      "percent": "mod",
+      "remarks": null,
+      "shape": "globular",
+      "date": "2022-07-09",
+      "field_number": "062",
+      "origin": "From Locus",
+      "color": "Gley 1 S-N",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "frag?",
+      "allocation": "",
+      "notes": "",
+      "weight": "115.00",
+      "width": "4.02",
+      "perforation_diameter": ""
+    }, {
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "061",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-07",
+      "type": "Stone"
+    }, {
+      "length_height": "",
+      "designation": "ceramic tech",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": "Fragile",
+      "craftsmanship": "",
+      "registration_number": "S220071",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-07",
+      "field_number": "68",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-07",
+    "bone_bag": true,
+    "diagnostic_count": 12,
+    "pail_number": "168",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "062",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-09"
+    }, {
+      "type": "Stone",
+      "condition": null,
+      "field_number": "061",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-07"
+    }, {
+      "type": "Ceramic",
+      "condition": "Fragile",
+      "field_number": "68",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-07"
+    }],
+    "readings": [{
+      "age": "Iron 2B-C",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 5,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Lamp",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 131,
+    "baskets": 52,
+    "finds": [{
+      "length_height": "4.08",
+      "designation": "jar stopper",
+      "registars_condition": "whole",
+      "state": "initial registration",
+      "thickness": "1.14",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "ceramic",
+      "certainty": "possible",
+      "pieces": "1",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "somewhat",
+      "condition": null,
+      "craftsmanship": "very crude",
+      "registration_number": "A220115",
+      "diameter": "4.08",
+      "percent": "100%",
+      "remarks": null,
+      "shape": "circular",
+      "date": "2022-07-07",
+      "field_number": "070",
+      "origin": "From Sift",
+      "color": "2.5YR 6-6",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "comp",
+      "allocation": "",
+      "notes": "",
+      "weight": "20.20",
+      "width": "4.06",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-07",
+    "bone_bag": true,
+    "diagnostic_count": 27,
+    "pail_number": "163",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "070",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-07"
+    }],
+    "readings": [{
+      "age": "Iron 2B",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Jar, Holemouth",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Hellenistic",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Hellenistic",
+      "pot_form": "Pot",
+      "time_level": null,
+      "count": 15,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 42,
+    "finds": [],
+    "pail_date": "2022-07-07",
+    "bone_bag": true,
+    "diagnostic_count": 21,
+    "pail_number": "166",
+    "pottery_comments": null,
+    "publish": 1,
+    "total_count": 75,
+    "readings": [{
+      "age": "Iron 1",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar, Holemouth",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2/Persian",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 47,
+    "finds": [],
+    "pail_date": "2022-07-10",
+    "bone_bag": true,
+    "diagnostic_count": 15,
+    "pail_number": "169",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 96,
+    "readings": [{
+      "age": "Late Bronze",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Bronze",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Early Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Early Iron 2",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 4,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Hellenistic",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 113,
+    "baskets": 64,
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "064",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-10",
+      "type": "Stone"
+    }],
+    "pail_date": "2022-07-10",
+    "bone_bag": true,
+    "diagnostic_count": 18,
+    "pail_number": "170",
+    "pottery_comments": null,
+    "publish": 0,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "064",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-10"
+    }],
+    "readings": [{
+      "age": "Iron 2B",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 32,
+    "finds": [],
+    "pail_date": "2022-07-10",
+    "bone_bag": true,
+    "diagnostic_count": 8,
+    "pail_number": "172",
+    "pottery_comments": null,
+    "publish": 4,
+    "total_count": 54,
+    "readings": [{
+      "age": "Early Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Early Iron 2",
+      "pot_form": "Painted Body",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B-C",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 133,
+    "baskets": 41,
+    "finds": [{
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "066",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-10",
+      "type": "Stone"
+    }, {
+      "origin": "From Sift",
+      "condition": null,
+      "field_number": "067",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-10",
+      "type": "Ceramic"
+    }, {
+      "length_height": "",
+      "designation": "ceramic tech",
+      "registars_condition": "",
+      "state": "initial registration",
+      "thickness": "",
+      "modifier_1": "",
+      "decoration": "",
+      "material": "",
+      "certainty": "",
+      "pieces": "",
+      "type": "Ceramic",
+      "period": "",
+      "shape_modifier": "",
+      "condition": null,
+      "craftsmanship": "",
+      "registration_number": "S220075",
+      "diameter": "",
+      "percent": "",
+      "remarks": null,
+      "shape": "",
+      "date": "2022-07-10",
+      "field_number": "074",
+      "origin": "From Sift",
+      "color": "",
+      "modifier_2": "",
+      "migrated_type": "Artifact",
+      "stratum": "",
+      "preservation": "",
+      "allocation": "",
+      "notes": "",
+      "weight": "",
+      "width": "",
+      "perforation_diameter": ""
+    }],
+    "pail_date": "2022-07-10",
+    "bone_bag": true,
+    "diagnostic_count": 18,
+    "pail_number": "173",
+    "pottery_comments": null,
+    "publish": 1,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "066",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-10"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "067",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-10"
+    }, {
+      "type": "Ceramic",
+      "condition": null,
+      "field_number": "074",
+      "remarks": null,
+      "origin": "From Sift",
+      "date": "2022-07-10"
+    }],
+    "readings": [{
+      "age": "Middle Bronze",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 9,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 24,
+    "finds": [],
+    "pail_date": "2022-07-10",
+    "bone_bag": true,
+    "diagnostic_count": 11,
+    "pail_number": "174",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 71,
+    "readings": [{
+      "age": "Iron 1",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 5,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2",
+      "pot_form": "Painted Body",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "total_count": 67,
+    "baskets": 24,
+    "finds": [{
+      "origin": "From Locus",
+      "condition": null,
+      "field_number": "071",
+      "remarks": null,
+      "migrated_type": "Artifact",
+      "date": "2022-07-11",
+      "type": "Stone"
+    }],
+    "pail_date": "2022-07-11",
+    "diagnostic_count": 20,
+    "pail_number": "175",
+    "pottery_comments": "Ledge handle",
+    "publish": 4,
+    "artifacts": [{
+      "type": "Stone",
+      "condition": null,
+      "field_number": "071",
+      "remarks": null,
+      "origin": "From Locus",
+      "date": "2022-07-11"
+    }],
+    "readings": [{
+      "age": "Late Bronze",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Pithos",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Late Iron 2",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 3,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Classical",
+      "pot_form": "Bowl",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Early Bronze",
+      "pot_form": "Other",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }, {
+    "baskets": 23,
+    "finds": [],
+    "pail_date": "2022-07-12",
+    "bone_bag": true,
+    "diagnostic_count": 21,
+    "pail_number": "185",
+    "pottery_comments": null,
+    "publish": 0,
+    "total_count": 132,
+    "readings": [{
+      "age": "Iron 2B",
+      "pot_form": "Jar",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Jug",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Krater",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Cooking Pot",
+      "time_level": null,
+      "count": 1,
+      "quantity_modifier": null,
+      "question": null
+    }, {
+      "age": "Iron 2B",
+      "pot_form": "Painted Body",
+      "time_level": null,
+      "count": 2,
+      "quantity_modifier": null,
+      "question": null
+    }]
+  }],
+  "photos": [{
+    "date": "27 Jun 2019",
+    "number": "B19.24.42.006",
+    "subject": "Locus 26"
+  }, {
+    "date": "28 Jun 2019",
+    "number": "B19.24.42.007",
+    "subject": "Progress"
+  }, {
+    "date": "2022-07-03",
+    "number": "B22.24.42.0072_0703_progress",
+    "subject": "Progress "
+  }, {
+    "date": "2022-07-03",
+    "number": "B22.24.42.0073.0703_progress",
+    "subject": "Progress "
+  }, {
+    "date": "2022-07-06",
+    "number": "B22.24.42.0126_0706_Progress",
+    "subject": "Progress "
+  }, {
+    "date": "2022-07-07",
+    "number": "B22.24.42.0152_0707_Progress",
+    "subject": "Progress "
+  }, {
+    "date": "2022-07-07",
+    "number": "B22.24.42.0153_0707_Progress",
+    "subject": "Progress "
+  }, {
+    "date": "2022-07-10",
+    "number": "B22.24.42.0170_0710_L058",
+    "subject": "Locus 58"
+  }],
+  "reason": "Sharp increase in no. of boulders as compared to loci above",
+  "start_date": "2019-06-27"
+}

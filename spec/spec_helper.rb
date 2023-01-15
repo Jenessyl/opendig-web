@@ -17,6 +17,18 @@ Buildkite::TestCollector.configure(hook: :rspec)
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
+
+  config.before(:suite) do
+    Dir.glob(File.join(Rails.root, "spec", "fixtures", "*.json")).each do |file|
+      Rails.application.config.couchdb.save_doc(JSON.parse(File.read(file)))
+    end
+  end
+
+  config.after(:suite) do
+    Rails.application.config.couchdb.delete!
+  end
+
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
