@@ -84,3 +84,5 @@ group :test do
   gem "buildkite-test_collector"
   gem "rails-controller-testing"
 end
+
+gem "tailwindcss-rails", "~> 2.0"

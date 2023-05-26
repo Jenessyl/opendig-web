@@ -6,6 +6,11 @@
 
 /* Layout helpers
 ----------------------------------*/
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 .ui-helper-hidden {
 	display: none;
 }
