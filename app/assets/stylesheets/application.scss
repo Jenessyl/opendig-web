@@ -6,9 +6,9 @@
 
 /* Layout helpers
 ----------------------------------*/
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
 
 
 .ui-helper-hidden {
@@ -1326,4 +1326,25 @@ a.ui-button:active,
 .find-img-small {
 	max-width: 175px;
 	max-height: 175px;
+}
+
+
+/* Carrausel */
+
+.glide--fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.glide--fullscreen .glide__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }

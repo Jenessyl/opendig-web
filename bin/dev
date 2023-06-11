@@ -1,24 +1,8 @@
 #!/usr/bin/env sh
 
-# delete file if it exists
-if [ -f "./tmp/pids/server.pid" ]; then
-  # capture pid from file
-  pid=$(cat ./tmp/pids/server.pid)
-  # check if process is running
-  if kill -0 "$pid" > /dev/null 2>&1; then
-    # process is running
-    echo "Process is running with pid $pid. Stoping..."
-    # kill process
-    kill $pid
-    # delete file
-    rm ./tmp/pids/server.pid
-    echo "Process stopped."
-  else
-    # process is not running
-    echo "Process is not running."
-    rm ./tmp/pids/server.pid
-  fi
+if ! gem list foreman -i --silent; then
+  echo "Installing foreman..."
+  gem install foreman
 fi
 
-bundle exec bin/rails assets:precompile
-bundle exec rdbg --port 3001 --host 0.0.0.0 -n -O -c -- bin/rails server -b 0.0.0.0
+exec foreman start -f Procfile.dev "$@"

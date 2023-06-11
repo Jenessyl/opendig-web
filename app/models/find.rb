@@ -22,7 +22,7 @@ class Find
   end
 
   def self.get_image_keys(registration_number)
-    Rails.cache.fetch("#{registration_number}_images", expires_in: 1.day) do
+    Rails.cache.fetch("#{registration_number}_images", expires_in: 1.hour) do
       bucket = Rails.application.config.s3_bucket
       object_key = "finds/#{registration_number}"
       objects = bucket.objects(prefix: object_key)
@@ -38,25 +38,19 @@ class Find
     end
   end
 
-  def self.get_presigned_url(registration_number)
-    unless Find.can_have_image?(registration_number)
-      url = 'https://via.placeholder.com/250x250.png?text=No+Image'
-    else
-      bucket = Rails.application.config.s3_bucket
-      object_key = "#{registration_number}.jpg"
-      if bucket.object(object_key).exists?
-        begin
-          url = bucket.object(object_key).presigned_url(:get)
-        rescue Aws::Errors::ServiceError => e
-          Rails.logger.error "Couldn't create presigned URL for #{bucket.name}:#{object_key}. Here's why: #{e.message}"
-          url = 'https://via.placeholder.com/250x250.png?text=No+Image'
+  def self.get_presigned_urls(registration_number)
+    bucket = Rails.application.config.s3_bucket
 
+    if Find.can_have_image?(registration_number)
+      Rails.cache.fetch("#{registration_number}_presigned_urls", expires_in: 5.minutes) do
+        keys = get_image_keys(registration_number)
+        urls = keys.map do |key|
+          bucket.object(key).presigned_url(:get)
         end
-      else
-        url = 'https://via.placeholder.com/250x250.png?text=No+Image'
+        urls
       end
+    else
+      ['https://via.placeholder.com/250x250.png?text=No+Image']
     end
-
-    url
   end
 end

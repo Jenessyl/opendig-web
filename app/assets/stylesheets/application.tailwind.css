@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 
 @layer components {
   .btn-primary {
@@ -10,4 +10,40 @@
   }
 }
 
-*/
+
+
+/* Carrausel */
+.carousel {
+  width: 100%;
+}
+
+.flickity-viewport {
+  height: 300px;
+}
+
+.flickity-prev-next-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.flickity-prev-next-button svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+.flickity-prev-next-button.next {
+  right: 10px;
+}

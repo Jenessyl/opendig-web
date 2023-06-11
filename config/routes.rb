@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   end
 
   resources :registrar
+  resources :bulk_uploads, only: [:new, :create]
+
   resources :reports, only: [:index, :show]
 
   root to: 'areas#index'
