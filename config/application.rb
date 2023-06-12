@@ -20,6 +20,7 @@ module OpendigWeb7
     config.eager_load_paths << Rails.root.join("lib")
     config.assets.precompile += ['pdf.css']
     config.autoload_paths += Dir["#{Rails.root}/lib/**/"] if Rails.env == 'development'
+    config.assets.css_compressor = nil
 
   end
 end
