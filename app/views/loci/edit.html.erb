@@ -1,27 +1,22 @@
 <div class="container">
-  <div class="row">
-    <div class="col-10 align-bottom">
-      <h1>Editing Locus <%= @area %>.<%= @square %>.<%= @locus_code %></h1>
-    </div>
-    <div class="col-2 align-bottom">
-    </div>
+  <div class="flex flex-row items-center justify-between mb-4">
+    <h1 class="text-3xl font-bold">Editing Locus <%= @area %>.<%= @square %>.<%= @locus_code %></h1>
+    <div></div>
   </div>
-  <div class="row">
-    <div class="col">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
-          <li class="breadcrumb-item"><%= link_to "Area #{@area}", area_squares_path(@area) %></li>
-          <li class="breadcrumb-item"><%= link_to "Square #{@square}", area_square_loci_path(@area, @square) %></li>
-          <li class="breadcrumb-item"><%= link_to "Locus #{@area}.#{@square}.#{@locus_code}", area_square_locus_path(@area, @square, @locus_code) %></li>
-          <li class="breadcrumb-item active" aria-current="page">Editing Locus <%= @area %>.<%= @square %>.<%= @locus_code %></li>
-        </ol>
-      </nav>
-    </div>
+  <div class="flex mb-4">
+    <nav aria-label="breadcrumb">
+      <ol class="flex flex-row">
+        <li class="mr-2"><%= link_to 'Home', root_path, class: "text-blue-500" %></li>
+        <li class="mr-2"><%= link_to "Area #{@area}", area_squares_path(@area), class: "text-blue-500" %></li>
+        <li class="mr-2"><%= link_to "Square #{@square}", area_square_loci_path(@area, @square), class: "text-blue-500" %></li>
+        <li class="mr-2"><%= link_to "Locus #{@area}.#{@square}.#{@locus_code}", area_square_locus_path(@area, @square, @locus_code), class: "text-blue-500" %></li>
+        <li class="text-gray-500" aria-current="page">Editing Locus <%= @area %>.<%= @square %>.<%= @locus_code %></li>
+      </ol>
+    </nav>
   </div>
 </div>
 
-<%= form_with(url: area_square_locus_path(@area, @square, @locus_code), method: 'patch', local: true) do |locus_form| %>
+<%= form_with(url: area_square_locus_path(@area, @square, @locus_code), method: 'patch', local: true, class: "mb-4") do |locus_form| %>
   <%= render 'form', locus_form: locus_form %>
 <% end %>
 

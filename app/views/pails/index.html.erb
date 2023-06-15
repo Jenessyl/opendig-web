@@ -1,13 +1,13 @@
-<div class="row">
-  <div class="col-10 align-bottom">
-    <h1>Pails for <%= @area %>.<%= @square %></h1>
+<div class="container">
+  <div class="flex items-center mb-4">
+    <div class="w-9/12">
+      <h1 class="text-2xl font-semibold">Pails for <%= @area %>.<%= @square %></h1>
+    </div>
+    <div class="w-3/12 text-right">
+      <%= link_to "Back to Loci", area_square_loci_path(@area, @square), class: "px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600" %>
+    </div>
   </div>
-  <div class="col-2 align-bottom">
-    <%= link_to "Back to Loci", area_square_loci_path(@area, @square), class: "btn btn-primary float-right" %>
-  </div>
-</div>
-<div class="row">
-  <div class="col">
+  <div class="flex mb-4">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><%= link_to 'Home', root_path %></li>
@@ -16,30 +16,28 @@
       </ol>
     </nav>
   </div>
+  <div class="flex mb-4">
+    <div class="w-3/12">
+      <h3 class="text-lg font-semibold">Pail Number</h3>
+    </div>
+    <div class="w-3/12">
+      <h3 class="text-lg font-semibold">Locus</h3>
+    </div>
+    <div class="w-6/12">
+      <h3 class="text-lg font-semibold">Pail Date</h3>
+    </div>
+  </div>
+  <% @pails.each do |pail| %>
+    <div class="flex mb-4">
+      <div class="w-3/12">
+        <%= pail.pail_number %>
+      </div>
+      <div class="w-3/12">
+        <%= link_to "#{pail.locus}", area_square_locus_path(@area, @square, pail.locus), class: "text-blue-500 hover:text-blue-700" %>
+      </div>
+      <div class="w-6/12">
+        <%= pail.pail_date %>
+      </div>
+    </div>
+  <% end %>
 </div>
-
-<div class="row">
-  <div class="col-3">
-    <h3>Pail Number</h3>
-  </div>
-  <div class="col-3">
-    <h3>Locus</h3>
-  </div>
-  <div class="col-6">
-    <h3>Pail Date</h3>
-  </div>
-</div>
-
-<% @pails.each do |pail| %>
-<div class="row">
-  <div class="col-3">
-    <%= pail.pail_number %>
-  </div>
-  <div class="col-3">
-    <%= link_to "#{pail.locus}", area_square_locus_path(@area, @square, pail.locus) %>
-  </div>
-  <div class="col-6">
-    <%= pail.pail_date %>
-  </div>
-</div>
-<% end %>

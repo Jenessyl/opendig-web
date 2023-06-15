@@ -1,118 +1,128 @@
-<div class="row mb-5">
-  <div class="col">
-    <div class="row">
-      <div class="col">
-        <h2>Identification</h2>
+<div class="flex flex-col">
+  <div class="flex flex-row items-center justify-between mb-5">
+    <h1 class="text-3xl font-bold">Editing Locus <%= @area %>.<%= @square %>.<%= @locus_code %></h1>
+    <div></div>
+  </div>
+
+  <div class="flex flex-col mb-5">
+    <div class="flex flex-row mb-4">
+      <div class="flex flex-col">
+        <h2 class="text-xl font-bold">Identification</h2>
       </div>
     </div>
-    <div class="form-group row">
-      <label for="area" class="col-sm-2 col-form-label">Area</label>
-      <div class="col-sm-2">
+    <div class="form-group flex flex-row mb-2">
+      <label for="area" class="flex items-center justify-end w-1/6">Area</label>
+      <div class="flex items-center w-1/6">
         <input type="text" readonly class="form-control" name="locus[area]" id="locus[area]" value="<%= @area %>">
       </div>
-      <label for="square" class="col-sm-2 col-form-label">Square</label>
-      <div class="col-sm-2">
+      <label for="square" class="flex items-center justify-end w-1/6">Square</label>
+      <div class="flex items-center w-1/6">
         <input type="text" readonly class="form-control" name="locus[square]" id="locus[square]" value="<%= @square %>">
       </div>
-      <label for="code" class="col-sm-2 col-form-label">Locus Code</label>
-      <div class="col-sm-2">
+      <label for="code" class="flex items-center justify-end w-1/6">Locus Code</label>
+      <div class="flex items-center w-1/6">
         <input type="text" class="form-control" name="locus[code]" id="locus[code]" value="<%= @locus['code'] %>">
       </div>
     </div>
-    <div class="form-group row">
-      <label for="locus_type" class="col-sm-2 col-form-label">Locus Type</label>
-      <div class="col-sm-2">
+    <div class="form-group flex flex-row mb-2">
+      <label for="locus_type" class="flex items-center justify-end w-1/6">Locus Type</label>
+      <div class="flex items-center w-1/6">
         <input type="text" readonly class="form-control" name="locus[locus_type]" value="<%= @locus['locus_type'] %>">
       </div>
-      <label for="supervisor" class="col-sm-2 col-form-label">Supervisor</label>
-      <div class="col-sm-6">
+      <label for="supervisor" class="flex items-center justify-end w-1/6">Supervisor</label>
+      <div class="flex items-center w-1/2">
         <input type="text" class="form-control" name="locus[supervisor]" value="<%= @locus['supervisor'] %>">
       </div>
     </div>
-    <div class="form-group row">
-      <label for="start_date" class="col-sm-2 col-form-label">Start Date</label>
-      <div class="col-sm-4">
+    <div class="form-group flex flex-row mb-2">
+      <label for="start_date" class="flex items-center justify-end w-1/6">Start Date</label>
+      <div class="flex items-center w-1/3">
         <input type="text" id="start_date" class="form-control" name="locus[start_date]" value="<%= read_date @locus['start_date'] %>">
       </div>
-      <label for="end_date" class="col-sm-2 col-form-label">End Date</label>
-      <div class="col-sm-4">
+      <label for="end_date" class="flex items-center justify-end w-1/6">End Date</label>
+      <div class="flex items-center w-1/3">
         <input type="text" id="end_date" class="form-control" name="locus[end_date]" value="<%= read_date @locus['end_date'] %>">
       </div>
     </div>
 
-    <div class="form-group row">
-      <label for="designation" class="col-sm-12 col-form-label">Designation</label>
-      <div class="col-sm-12">
+    <div class="form-group flex flex-row mb-2">
+      <label for="designation" class="flex items-center justify-end w-1/6">Designation</label>
+      <div class="flex items-center w-5/6">
         <textarea class="form-control" id="locus[designation]" name="locus[designation]" rows="5"><%= @locus['designation'] %></textarea>
       </div>
     </div>
+  </div>
 
-    <div class="row">
-      <div class="col">
-        <h2>Rationale</h2>
+  <div class="flex flex-col mb-5">
+    <div class="flex flex-row mb-4">
+      <div class="flex flex-col">
+        <h2 class="text-xl font-bold">Rationale</h2>
       </div>
     </div>
-
-    <div class="form-group row">
-      <label for="reason" class="col-sm-12 col-form-label">Reason</label>
-      <div class="col-sm-12">
+    <div class="form-group flex flex-row mb-2">
+      <label for="reason" class="flex items-center justify-end w-1/6">Reason</label>
+      <div class="flex items-center w-5/6">
         <textarea class="form-control" id="locus[reason]" name="locus[reason]" rows="5"><%= @locus['reason'] %></textarea>
       </div>
     </div>
 
-    <div class="form-group row">
-      <label for="top_separation" class="col-sm-2 col-form-label">Top Separation</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_very_clear" value="Very Clear" <%= 'checked' if @locus['top_separation'] == 'Very Clear' %>>
-        <label class="form-check-label" for="top_separation_very_clear">Very Clear</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_clear" value="Clear" <%= 'checked' if @locus['top_separation'] == 'Clear' %>>
-        <label class="form-check-label" for="top_separation_clear">Clear</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_average" value="Average" <%= 'checked' if @locus['top_separation'] == 'Average' %>>
-        <label class="form-check-label" for="top_separation_average">Average</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_unclear" value="Unclear" <%= 'checked' if @locus['top_separation'] == 'Unclear' %>>
-        <label class="form-check-label" for="top_separation_unclear">Unclear</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_very_unclear" value="Very Unclear" <%= 'checked' if @locus['top_separation'] == 'Very Unclear' %>>
-        <label class="form-check-label" for="top_separation_average">Very Unclear</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_arbitrary" value="Arbitrary" <%= 'checked' if @locus['top_separation'] == 'Arbitrary' %>>
-        <label class="form-check-label" for="top_separation_average">Arbitrary</label>
+    <div class="form-group flex flex-row mb-2">
+      <label for="top_separation" class="flex items-center justify-end w-1/6">Top Separation</label>
+      <div class="flex items-center w-5/6">
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_very_clear" value="Very Clear" <%= 'checked' if @locus['top_separation'] == 'Very Clear' %>>
+          <label class="form-check-label" for="top_separation_very_clear">Very Clear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_clear" value="Clear" <%= 'checked' if @locus['top_separation'] == 'Clear' %>>
+          <label class="form-check-label" for="top_separation_clear">Clear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_average" value="Average" <%= 'checked' if @locus['top_separation'] == 'Average' %>>
+          <label class="form-check-label" for="top_separation_average">Average</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_unclear" value="Unclear" <%= 'checked' if @locus['top_separation'] == 'Unclear' %>>
+          <label class="form-check-label" for="top_separation_unclear">Unclear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_very_unclear" value="Very Unclear" <%= 'checked' if @locus['top_separation'] == 'Very Unclear' %>>
+          <label class="form-check-label" for="top_separation_average">Very Unclear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[top_separation]" id="top_separation_arbitrary" value="Arbitrary" <%= 'checked' if @locus['top_separation'] == 'Arbitrary' %>>
+          <label class="form-check-label" for="top_separation_average">Arbitrary</label>
+        </div>
       </div>
     </div>
 
-    <div class="form-group row">
-      <label for="bottom_separation" class="col-sm-2 col-form-label">Bottom Separation</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_very_clear" value="Very Clear" <%= 'checked' if @locus['bottom_separation'] == 'Very Clear' %>>
-        <label class="form-check-label" for="bottom_separation_very_clear">Very Clear</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_clear" value="Clear" <%= 'checked' if @locus['bottom_separation'] == 'Clear' %>>
-        <label class="form-check-label" for="bottom_separation_clear">Clear</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_average" value="Average" <%= 'checked' if @locus['bottom_separation'] == 'Average'%>>
-        <label class="form-check-label" for="bottom_separation_average">Average</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_unclear" value="Unclear" <%= 'checked' if @locus['bottom_separation'] == 'Unclear' %>>
-        <label class="form-check-label" for="bottom_separation_unclear">Unclear</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_very_unclear" value="Very Unclear" <%= 'checked' if @locus['bottom_separation'] == 'Very Unclear' %>>
-        <label class="form-check-label" for="bottom_separation_average">Very Unclear</label>
-      </div>
-        <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_arbitrary" value="Arbitrary" <%= 'checked' if @locus['bottom_separation'] == 'Arbitrary' %>>
-        <label class="form-check-label" for="bottom_separation_average">Arbitrary</label>
+    <div class="form-group flex flex-row mb-2">
+      <label for="bottom_separation" class="flex items-center justify-end w-1/6">Bottom Separation</label>
+      <div class="flex items-center w-5/6">
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_very_clear" value="Very Clear" <%= 'checked' if @locus['bottom_separation'] == 'Very Clear' %>>
+          <label class="form-check-label" for="bottom_separation_very_clear">Very Clear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_clear" value="Clear" <%= 'checked' if @locus['bottom_separation'] == 'Clear' %>>
+          <label class="form-check-label" for="bottom_separation_clear">Clear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_average" value="Average" <%= 'checked' if @locus['bottom_separation'] == 'Average'%>>
+          <label class="form-check-label" for="bottom_separation_average">Average</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_unclear" value="Unclear" <%= 'checked' if @locus['bottom_separation'] == 'Unclear' %>>
+          <label class="form-check-label" for="bottom_separation_unclear">Unclear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_very_unclear" value="Very Unclear" <%= 'checked' if @locus['bottom_separation'] == 'Very Unclear' %>>
+          <label class="form-check-label" for="bottom_separation_average">Very Unclear</label>
+        </div>
+        <div class="form-check form-check-inline mr-6">
+          <input class="form-check-input" type="radio" name="locus[bottom_separation]" id="bottom_separation_arbitrary" value="Arbitrary" <%= 'checked' if @locus['bottom_separation'] == 'Arbitrary' %>>
+          <label class="form-check-label" for="bottom_separation_average">Arbitrary</label>
+        </div>
       </div>
     </div>
   </div>

@@ -22,7 +22,7 @@ class Find
   end
 
   def self.get_image_keys(registration_number)
-    Rails.cache.fetch("#{registration_number}_images", expires_in: 1.hour) do
+    Rails.cache.fetch("#{registration_number}_images", expires_in: 5.minutes) do
       bucket = Rails.application.config.s3_bucket
       object_key = "finds/#{registration_number}"
       objects = bucket.objects(prefix: object_key)
@@ -32,7 +32,7 @@ class Find
   end
 
   def self.check_image(registration_number)
-    Rails.cache.fetch("#{registration_number}_has_keys", expires_in: 1.day) do
+    Rails.cache.fetch("#{registration_number}_has_keys", expires_in: 5.minutes) do
       keys = get_image_keys(registration_number)
       keys.any?
     end
@@ -55,7 +55,7 @@ class Find
     end
   end
 
-  def self.url(key, style="original")
+  def self.url(key, style=:original)
     Rails.cache.fetch("#{key}_url_#{style}", expires_in: 1.hour) do
       _style = Photo.styles(style)
       builder = Imgproxy::Builder.new(
@@ -63,6 +63,12 @@ class Find
       )
       builder.url_for("s3://#{Rails.application.config.s3_bucket.name}/#{key}")
     end
+  end
+
+  def self.clear_cache_keys(registration_number)
+    Rails.cache.delete("#{registration_number}_images")
+    Rails.cache.delete("#{registration_number}_has_keys")
+    Rails.cache.delete("#{registration_number}_presigned_urls")
   end
 
 end

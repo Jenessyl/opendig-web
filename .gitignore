@@ -56,3 +56,6 @@ grafana-data/
 .envrc
 /app/assets/builds/*
 !/app/assets/builds/.keep
+
+# os x fiels
+.DS_Store

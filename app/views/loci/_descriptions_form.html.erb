@@ -11,13 +11,12 @@
     </div>
   </div>
 
-  <% description_section[1].each do |descrtipion_section_entry| %>
+  <% description_section[1].each do |description_section_entry| %>
     <div class="form-group row">
-      <label for="field" class="col-sm-12 col-form-label"><%= descrtipion_section_entry['label'] %></label>
+      <label for="field" class="col-sm-12 col-form-label"><%= description_section_entry['label'] %></label>
       <div class="col-sm-12">
-        <%= input_for(descrtipion_section_entry, @locus&.dig(description_type)&.dig(descrtipion_section_entry['key']),description_type) %>
+        <%= input_for(description_section_entry, @locus&.dig(description_type)&.dig(description_section_entry['key']), description_type) %>
       </div>
     </div>
-
   <% end %>
 <% end %>

@@ -2370,6 +2370,24 @@
             }
         },
         {
+            "key": "stratum",
+            "label": "Stratum",
+            "type": "text_field",
+            "value_type": "string"
+        },
+        {
+            "key": "modifier_1",
+            "label": "Modifier 1",
+            "type": "text_field",
+            "value_type": "string"
+        },
+        {
+            "key": "modifier_2",
+            "label": "Modifier 2",
+            "type": "text_field",
+            "value_type": "string"
+        },
+        {
             "key": "shape",
             "label": "Shape",
             "type": "picker",
@@ -2407,7 +2425,7 @@
         },
         {
             "key": "munsell",
-            "label": "Colour",
+            "label": "Color",
             "type": "picker",
             "value_type": "string",
             "values": {
@@ -2453,12 +2471,6 @@
         {
             "key": "weight",
             "label": "Weight/g",
-            "type": "text_field",
-            "value_type": "string"
-        },
-        {
-            "key": "length_height",
-            "label": "Length/Height/cm",
             "type": "text_field",
             "value_type": "string"
         },

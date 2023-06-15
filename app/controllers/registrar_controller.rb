@@ -21,7 +21,7 @@ class RegistrarController < ApplicationController
     else
       @finds = Registrar.all_by_season(@selected_season.to_i).select{|reg| reg.state == @status}
     end
-    @finds.sort_by!{|find| [find.formatted_locus_code, find.pail_number, find.field_number]}
+    @finds.sort_by!{|find| [find.formatted_locus_code, find.pail_number]}
   end
 
   def show
