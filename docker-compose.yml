@@ -34,7 +34,7 @@ services:
       COUCHDB_USER: admin
       COUCHDB_PASSWORD: password
     ports:
-      - 6984:5984
+      - 5984:5984
     volumes:
       - ./couchdb-data:/opt/couchdb/data
 
@@ -67,32 +67,3 @@ services:
     image: redis:latest
     ports:
       - 6379:6379
-
-  # prometheus:
-  #   image: prom/prometheus:v2.37.0
-  #   ports:
-  #     - 9090:9090
-  #   volumes:
-  #     - ./prometheus-data:/etc/prometheus
-  #   depends_on:
-  #     - db
-  #     - minio
-
-  # grafana:
-  #   image: grafana/grafana:latest
-  #   ports:
-  #     - 4000:3000
-  #   volumes:
-  #     - ./grafana-data:/var/lib/grafana
-  #   # user: 501:20
-  #   depends_on:
-  #     - prometheus
-
-  # node_exporter:
-  #   image: prom/node-exporter:latest
-  #   command:
-  #     - '--collector.textfile.directory=/var/lib/textfile_collector'
-  #   ports:
-  #     - 9100:9100
-  #   volumes:
-  #     - ./shared-data/textfile_collector:/var/lib/textfile_collector
