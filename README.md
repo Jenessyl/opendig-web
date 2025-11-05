@@ -41,10 +41,10 @@ Edit the `.envrc` file with your configuration. The file includes:
   - `IMGPROXY_SALT`: 128-character string
   - `IMGPROXY_URL`: http://imgproxy:8080
 
-Generating the 128-character strings can be easily achieved with tools like `pwgen`:
+Generated a hex encoded string using the following example (from https://docs.imgproxy.net/configuration/options)
 
 ```bash
-pwgen 128 2
+echo $(xxd -g 2 -l 64 -p /dev/random | tr -d '\n')
 ```
 
 - **Rails Environment**:
@@ -228,4 +228,3 @@ docker compose up -d
 - Rails documentation: https://guides.rubyonrails.org/
 - Docker Compose documentation: https://docs.docker.com/compose/
 - direnv documentation: https://direnv.net/docs/
-

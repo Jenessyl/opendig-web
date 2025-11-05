@@ -25,9 +25,23 @@ RSpec.configure do |config|
   end
 
   config.after(:suite) do
-    Rails.application.config.couchdb.delete!
-  end
+    db = Rails.application.config.couchdb
+    begin
+      rows = db.all_docs(include_docs: true)['rows'] || []
+      docs_to_delete = rows.map { |r| r['doc'] }.compact.reject do |doc|
+        id = doc['_id'] || ''
+        id.start_with?('_design/') || id == 'opendig_config'
+      end
 
+      if docs_to_delete.any?
+        docs_to_delete.each { |d| d['_deleted'] = true }
+        db.bulk_save(docs_to_delete)
+      end
+    rescue => e
+      Rails.logger.error "Error cleaning test DB: #{e.class}: #{e.message}"
+      raise
+    end
+  end
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest

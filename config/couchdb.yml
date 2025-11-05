@@ -4,7 +4,7 @@ default: &default
   port: 5984
   username: admin
   password: password
-  prefix: balua
+  prefix: opendig
 
 development:
   <<: *default

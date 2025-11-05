@@ -8,8 +8,8 @@ RSpec.describe ApplicationController, type: :controller do
     end
 
     it "has all the documents" do
-      # five docs, plus the design doc
-      expect(Rails.application.config.couchdb.all_docs["rows"].count).to eq(6)
+      # five docs, plus the design doc and config doc
+      expect(Rails.application.config.couchdb.all_docs["rows"].count).to eq(7)
     end
   end
 
