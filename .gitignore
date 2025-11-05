@@ -59,3 +59,4 @@ grafana-data/
 
 # os x fiels
 .DS_Store
+__MACOSX
