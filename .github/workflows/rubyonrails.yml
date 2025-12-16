@@ -1,4 +1,4 @@
-name: CI
+name: ruby on rails CI
 
 on:
   push:
@@ -37,6 +37,17 @@ jobs:
         with:
           ruby-version: 3.2.0
           bundler-cache: true
+          
+      - name: Wait for CouchDB to be ready
+        run: |
+          echo "Waiting for CouchDB..."
+          for i in {1..30}; do
+            if curl -s http://admin:password@couchdb:5984 >/dev/null; then
+              echo "CouchDB is up"
+              break
+            fi
+            sleep 2
+          done
 
       - name: Prepare Rails log directory
         run: |
