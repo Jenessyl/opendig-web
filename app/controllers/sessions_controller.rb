@@ -13,4 +13,9 @@ class SessionsController < ApplicationController
     reset_session
     redirect_to root_path, notice: "Logged out!"
   end
+
+  def failure
+    flash[:error] = "Authentication failed, please try again."
+    redirect_to root_path
+  end
 end
