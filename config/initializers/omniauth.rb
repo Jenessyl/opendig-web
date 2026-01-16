@@ -12,7 +12,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :github, ENV['GITHUB_CLIENT_ID'], ENV['GITHUB_CLIENT_SECRET'], scope: "read:user,user:email"
 
   provider :microsoft_office365, ENV['MICROSOFT_CLIENT_ID'], ENV['MICROSOFT_CLIENT_SECRET'], {
-    scope: 'openid User.Read'
+    scope: 'openid offline_access User.Read'
   }
 
   if Rails.env.development?
