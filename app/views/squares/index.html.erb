@@ -17,8 +17,12 @@
       </ol>
     </nav>
 
-    <% @squares.each do |square| %>
-      <p class="mb-2"><%= link_to square, area_square_loci_path(@area, square), class: "text-blue-600 hover:underline" %></p>
+    <% if @squares.empty? %>
+        <p class="text-gray-400">Create a new Square to get started</p>
+    <% else %>
+      <% @squares.each do |square| %>
+        <p class="mb-2"><%= link_to square, area_square_loci_path(@area, square), class: "text-blue-600 hover:underline" %></p>
+      <% end %>
     <% end %>
   </div>
 </div>
