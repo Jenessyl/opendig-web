@@ -1,6 +1,6 @@
 # OpenDig Web
 
-A Rails 7 application for managing archaeological dig data.
+A Rails 7 application for managing archaeological dig data. [Join the Discord!](https://discord.gg/DJ7BZcQMsb)
 
 ## Requirements
 
@@ -30,7 +30,6 @@ Edit the `.envrc` file with your configuration. The file includes:
 - **AWS Credentials**: For S3-compatible storage (MinIO in development)
   - `AWS_ACCESS_KEY_ID`
   - `AWS_SECRET_ACCESS_KEY`
-  - `S3_BUCKET`
 
 - **Authentication**:
   - `EDIT_USER` / `EDIT_PASSWORD`: For edit access
@@ -235,6 +234,12 @@ docker compose up -d
 ```
 
 **Warning**: This will delete all data in CouchDB. The `docker compose down -v` command will also delete MinIO data.
+
+### Folder permissions issues
+
+If you see permission denied errors in the logs, you may need to setup and run the app in a fresh environment, such as a VM.
+
+At this time, Ubuntu and WSL2 should not have this issue.
 
 ## Additional Resources
 

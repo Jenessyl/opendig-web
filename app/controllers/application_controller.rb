@@ -1,12 +1,15 @@
 class ApplicationController < ActionController::Base
   before_action :set_db, :set_descriptions, :set_edit_mode
-  before_action :check_editing_mode, only: [:new, :edit, :create, :update, :destroy]
+  before_action :check_editing_mode, only: %i[new edit create update destroy]
 
-  http_basic_authenticate_with name: "#{ENV['EDIT_USER']}", password: "#{ENV['EDIT_PASSWORD']}" if Rails.env.production?
+  if Rails.env.production?
+    http_basic_authenticate_with name: (ENV['EDIT_USER']).to_s, password: (ENV['EDIT_PASSWORD']).to_s
+  end
 
   helper_method :current_user, :user_signed_in?, :require_authentication
 
   private
+
   def set_db
     @db = Rails.application.config.couchdb
   end
@@ -20,10 +23,10 @@ class ApplicationController < ActionController::Base
   end
 
   def check_editing_mode
-    unless @editing_enabled
-      flash[:error] = "Editing is disabled"
-      redirect_to request.referer
-    end
+    return if @editing_enabled
+
+    flash[:error] = 'Editing is disabled'
+    redirect_to request.referer
   end
 
   def user_signed_in?

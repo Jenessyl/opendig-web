@@ -1,4 +1,4 @@
-name: ruby on rails CI
+name: Tests & Linting
 
 on:
   push:
@@ -51,3 +51,4 @@ jobs:
       - name: Run tests
         run: |
           bundle exec rails test
+          bundle exec rails spec
