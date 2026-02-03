@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
-  skip_before_action :check_editing_mode, only: [:create, :destroy, :failure]
+  skip_before_action :check_editing_mode, only: %i[create destroy failure]
 
   def create
     if user_signed_in?
-      redirect_to root_path, notice: "Already logged in!"
+      redirect_to root_path, notice: 'Already logged in!'
       return
     end
 
@@ -13,16 +13,19 @@ class SessionsController < ApplicationController
       u.name = auth['info']['name']
     end
     session[:user_id] = user.id
-    redirect_to root_path, notice: "Logged in!"
+    redirect_to root_path, notice: 'Logged in!'
   end
 
   def destroy
     reset_session
-    redirect_to root_path, notice: "Logged out!"
+    redirect_to root_path, notice: 'Logged out!'
+  end
+
+  def login
   end
 
   def failure
-    flash[:error] = "Authentication failed, please try again."
+    flash[:error] = 'Authentication failed, please try again.'
     redirect_to root_path
   end
 end
