@@ -62,8 +62,8 @@ gem 'aws-sdk-s3'
 group :development, :test do
   gem "debug"
   gem "rubocop"
-  gem "rubocop-rails"
-  gem "rubocop-rspec"
+  gem "rubocop-rails", require: false
+  gem "rubocop-rspec", require: false
 end
 
 group :development do
