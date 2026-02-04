@@ -257,6 +257,8 @@ GEM
     rubocop-ast (1.49.0)
       parser (>= 3.3.7.2)
       prism (~> 1.7)
+    rubocop-capybara (2.21.0)
+      rubocop (~> 1.41)
     rubocop-rails (2.29.1)
       activesupport (>= 4.2.0)
       rack (>= 1.1)
@@ -264,6 +266,9 @@ GEM
       rubocop-ast (>= 1.31.1, < 2.0)
     rubocop-rspec (3.4.0)
       rubocop (~> 1.61)
+    rubocop-rspec_rails (2.30.0)
+      rubocop (~> 1.61)
+      rubocop-rspec (~> 3, >= 3.0.1)
     ruby-next-core (0.15.2)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
@@ -357,8 +362,10 @@ DEPENDENCIES
   redis
   rspec-rails
   rubocop
+  rubocop-capybara
   rubocop-rails
   rubocop-rspec
+  rubocop-rspec_rails
   sassc-rails
   selenium-webdriver
   simple_form
