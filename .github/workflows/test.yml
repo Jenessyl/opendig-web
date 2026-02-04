@@ -1,4 +1,4 @@
-name: Tests & Linting
+name: Tests
 
 on:
   push:
@@ -35,7 +35,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.0
+          # No need to specify Ruby version, action reads from .ruby-version
           bundler-cache: true
 
       - name: Prepare Rails log directory
@@ -48,6 +48,7 @@ jobs:
         run: |
           bundle exec rails db:create
 
-      - name: Run tests
+      - name: Run Minitest & RSpec tests
         run: |
           bundle exec rails test
+          bundle exec rails spec
