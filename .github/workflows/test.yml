@@ -8,26 +8,26 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    # services:
-    #   couchdb:
-    #     image: couchdb:3.4
-    #     env:
-    #       COUCHDB_USER: admin
-    #       COUCHDB_PASSWORD: password
-    #     ports:
-    #       - 5984:5984
-    #     options: >-
-    #       --health-cmd "curl -f http://localhost:5984/ || exit 1"
-    #       --health-interval 10s
-    #       --health-timeout 5s
-    #       --health-retries 10
+    services:
+      couchdb:
+        image: couchdb:3.4
+        env:
+          COUCHDB_USER: admin
+          COUCHDB_PASSWORD: password
+        ports:
+          - 5984:5984
+        options: >-
+          --health-cmd "curl -f http://localhost:5984/ || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
 
     env:
       RAILS_ENV: test
-      # COUCHDB_HOST: 127.0.0.1
-      # COUCHDB_PORT: 5984
-      # COUCHDB_USER: admin
-      # COUCHDB_PASSWORD: password
+      COUCHDB_HOST: 127.0.0.1
+      COUCHDB_PORT: 5984
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: password
 
     steps:
       - uses: actions/checkout@v4
@@ -44,9 +44,9 @@ jobs:
           touch log/test.log
           chmod 0664 log/test.log
 
-      # - name: Setup database
-      #   run: |
-      #     bundle exec rails db:create
+      - name: Setup database
+        run: |
+          bundle exec rails db:create
 
       - name: Run Minitest & RSpec tests
         run: |
