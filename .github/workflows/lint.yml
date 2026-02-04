@@ -1,0 +1,22 @@
+name: Lint
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          # No need to specify Ruby version, action reads from .ruby-version
+          bundler-cache: true
+
+      - name: Lint code
+        run: |
+          bundle exec rubocop --parallel --display-cop-names --fail-level convention
