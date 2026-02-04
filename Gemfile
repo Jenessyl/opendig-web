@@ -60,7 +60,10 @@ gem "imgproxy"
 gem 'aws-sdk-s3'
 
 group :development, :test do
-  gem 'debug'
+  gem "debug"
+  gem "rubocop"
+  gem "rubocop-rails"
+  gem "rubocop-rspec"
 end
 
 group :development do
