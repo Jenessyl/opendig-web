@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: ubuntu
+    container: ruby:3.2.0-alpine
 
     services:
       couchdb:
@@ -32,12 +32,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Install system dependencies
-        run: |
-          apt-get update
-          apt-get install -y --no-install-recommends \
-            libyaml-dev
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
