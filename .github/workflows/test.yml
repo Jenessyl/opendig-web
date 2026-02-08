@@ -44,10 +44,6 @@ jobs:
           touch log/test.log
           chmod 0664 log/test.log
 
-      - name: Setup database
-        run: |
-          bundle exec rails db:create
-
       - name: Run RSpec tests
         run: |
           bundle exec rails spec
