@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
 
   http_basic_authenticate_with name: "#{ENV['EDIT_USER']}", password: "#{ENV['EDIT_PASSWORD']}" if Rails.env.production?
 
-  helper_method :current_user, :user_signed_in?, :require_authentication
+  helper_method :current_user, :user_signed_in?, :require_authentication, :require_admin
 
   private
   def set_db
@@ -37,6 +37,13 @@ class ApplicationController < ActionController::Base
   def require_authentication
     unless user_signed_in?
       flash[:error] = "You must be logged in to access this section"
+      redirect_to root_path
+    end
+  end
+
+  def require_admin
+    unless user_signed_in? && current_user.admin?
+      flash[:error] = "You must be an admin to access this section"
       redirect_to root_path
     end
   end
