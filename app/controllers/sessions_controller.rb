@@ -11,6 +11,7 @@ class SessionsController < ApplicationController
     user = User.find_or_create_by(uid: auth['uid'], provider: auth['provider']) do |u|
       u.email = auth['info']['email']
       u.name = auth['info']['name']
+      u.access_level ||= :viewer
     end
     session[:user_id] = user.id
     greeting = user.name ? '' : ". Welcome #{user.name}!"
