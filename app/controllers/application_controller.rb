@@ -31,21 +31,26 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user
+    return nil unless session[:user_id]
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
 
   def require_authentication
-    unless user_signed_in?
-      flash[:error] = "You must be logged in to access this section"
-      redirect_to root_path
-    end
+    return if user_signed_in?
+
+    flash[:error] = "You must be logged in to access this section"
+    redirect_to root_path
+    return
   end
 
   def require_role(role)
     require_authentication
+    return if performed? # Don't check role if authentication check failed
+
     unless current_user.role_at_least? role
       flash[:error] = "You must be a(n) #{role} to access this section"
       redirect_to root_path
+      return
     end
   end
 
