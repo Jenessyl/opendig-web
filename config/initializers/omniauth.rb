@@ -17,7 +17,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 
   if Rails.env.development?
     provider :developer,
-      fields: [:name, :email, :access_level],
+      fields: [:name, :email, :role],
       uid_field: :email
     
     configure do |config|
