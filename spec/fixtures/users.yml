@@ -1,14 +1,17 @@
-google_oauth2:
-  provider: google_oauth2
-  uid: 12345
-  email: john@example.com
+viewer:
+  uid: 1
+  provider: 'test_provider'
+  email: 'viewer@example.com'
+  role: 'viewer'
 
-github:
-  provider: github
-  uid: 67890
-  email: jane@example.com
+editor:
+  uid: 2
+  provider: 'test_provider'
+  email: 'editor@example.com'
+  role: 'editor'
 
-microsoft_office365:
-  provider: microsoft_office365
-  uid: 11223
-  email: alice@example.com
+admin:
+  uid: 3
+  provider: 'test_provider'
+  email: 'admin@example.com'
+  role: 'admin'

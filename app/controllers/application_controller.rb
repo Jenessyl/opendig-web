@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :set_db, :set_descriptions, :set_edit_mode
   before_action :check_editing_mode, only: [:new, :edit, :create, :update, :destroy]
+  before_action :check_session_timeout
+  before_action :update_session_timestamp
 
   http_basic_authenticate_with name: "#{ENV['EDIT_USER']}", password: "#{ENV['EDIT_PASSWORD']}" if Rails.env.production?
 
@@ -23,6 +25,20 @@ class ApplicationController < ActionController::Base
     unless @editing_enabled
       flash[:error] = "Editing is disabled"
       redirect_to request.referer
+    end
+  end
+
+  # 30-minute sliding expiration
+  def update_session_timestamp
+    session[:last_seen] = Time.current
+  end
+
+  def check_session_timeout
+    timeout_minutes = 30.minutes
+    
+    if session[:last_seen].present? && (Time.current - Time.parse(session[:last_seen].to_s)) > timeout_minutes
+      reset_session
+      flash[:alert] = "Your session has expired due to inactivity."
     end
   end
 
