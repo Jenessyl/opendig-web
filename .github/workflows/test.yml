@@ -42,7 +42,7 @@ jobs:
       
       - name: Upload log if previous action fails
         if: failure()
-        run: ls -la ~/cache-apt-pkgs
+        run: ls -la /__w/_actions/awalsh128/cache-apt-pkgs-action/v1/
         # uses: actions/upload-artifact@v4
         # with:
         #   name: test-logs
