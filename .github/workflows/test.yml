@@ -34,9 +34,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: |
-          apt-get update
-          apt-get install -y build-essential libyaml-dev libsqlite3-dev tzdata
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: build-essential libyaml-dev libsqlite3-dev tzdata
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
