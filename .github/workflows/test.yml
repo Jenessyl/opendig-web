@@ -50,7 +50,7 @@ jobs:
       - name: Install dependencies
         run: |
           apt update
-          xargs -a apt-packages.txt apt install -y
+          xargs -a apt-packages.txt apt -o APT::Keep-Downloaded-Packages=true install -y
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
