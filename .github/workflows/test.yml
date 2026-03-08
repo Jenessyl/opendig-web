@@ -36,7 +36,7 @@ jobs:
       - name: Install dependencies
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: build-essential libyaml-dev libsqlite3-dev tzdata
+          packages: "build-essential libyaml-dev libsqlite3-dev tzdata"
           debug: true
 
       - name: Set up Ruby
