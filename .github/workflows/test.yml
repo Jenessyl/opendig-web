@@ -33,24 +33,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Write packages to text file
-        run: echo "build-essential libyaml-dev libsqlite3-dev tzdata" > apt-packages.txt
-
-      - name: Cache Apt packages
-        uses: actions/cache@v4
-        env:
-          cache-name: apt-cache
-        with:
-          path: /var/cache/apt
-          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('apt-packages.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ env.cache-name }}-
-            ${{ runner.os }}-
-
       - name: Install dependencies
-        run: |
-          apt update
-          xargs -a apt-packages.txt apt -o APT::Keep-Downloaded-Packages=true install -y
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: build-essential libyaml-dev libsqlite3-dev tzdata
+          version: 1.0
+          debug: true
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
