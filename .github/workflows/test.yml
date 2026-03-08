@@ -39,6 +39,13 @@ jobs:
           packages: build-essential libyaml-dev libsqlite3-dev tzdata
           version: 1.0
           debug: true
+      
+      - name: Upload log if previous action fails
+        if: failure()
+        run: ls -la | grep log
+        # uses: actions/upload-artifact@v4
+        # with:
+        #   name: test-logs
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
