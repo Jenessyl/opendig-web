@@ -73,11 +73,25 @@ group :development, :test do
   gem "rails-controller-testing"
 
   # Lint dependencies
-  gem "rubocop", "~> 1.69", require: false
+  gem "rubocop", "~> 1.70.0", require: false
   gem "rubocop-rspec", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-rspec_rails", require: false
   gem "rubocop-capybara", require: false
+
+  # Ruby LSP (editor integration)
+  gem "ruby-lsp", require: false
+  gem "ruby-lsp-rails", require: false
+  gem "ruby-lsp-rspec", require: false
+  gem "ruby-lsp-brakeman", require: false
+  gem "ruby-lsp-doclinks", require: false
+  # Test dependencies
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+  gem 'rspec-rails'
+  gem "buildkite-test_collector"
+  gem "rails-controller-testing"
 end
 
 group :development do
