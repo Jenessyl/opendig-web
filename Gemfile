@@ -61,6 +61,7 @@ gem 'aws-sdk-s3'
 
 group :development, :test do
   gem 'debug'
+  gem 'rails_live_reload'
 
   # Test dependencies (moved them here since Bundler wasn't loading them in CI)
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
@@ -77,6 +78,14 @@ group :development, :test do
   gem "rubocop-rails", require: false
   gem "rubocop-rspec_rails", require: false
   gem "rubocop-capybara", require: false
+
+  # Test dependencies
+  gem "capybara"
+  gem "selenium-webdriver"
+  gem "webdrivers"
+  gem 'rspec-rails'
+  gem "buildkite-test_collector"
+  gem "rails-controller-testing"
 end
 
 group :development do
